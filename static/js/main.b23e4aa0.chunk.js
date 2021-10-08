@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[0],{10:function(e,t,n){"use strict";n.r(t);var c=n(1),r=n.n(c),i=n(3),o=n.n(i),s=(n(8),n(0)),j=function(){return Object(s.jsx)("div",{children:Object(s.jsx)("h1",{children:"John Adibe"})})};var d=function(){return Object(s.jsx)("div",{className:"App",children:Object(s.jsx)(j,{})})};o.a.render(Object(s.jsx)(r.a.StrictMode,{children:Object(s.jsx)(d,{})}),document.getElementById("root"))},8:function(e,t,n){}},[[10,1,2]]]);
-//# sourceMappingURL=main.b23e4aa0.chunk.js.map
