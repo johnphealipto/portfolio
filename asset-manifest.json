@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.94108309.chunk.css",
-    "main.js": "/portfolio/static/js/main.aa117b45.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.aa117b45.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.28bf7241.chunk.css",
+    "main.js": "/portfolio/static/js/main.477494a4.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.477494a4.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5483d5da.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5483d5da.js.map",
     "static/js/2.041ac3bb.chunk.js": "/portfolio/static/js/2.041ac3bb.chunk.js",
     "static/js/2.041ac3bb.chunk.js.map": "/portfolio/static/js/2.041ac3bb.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.94108309.chunk.css.map": "/portfolio/static/css/main.94108309.chunk.css.map",
+    "static/css/main.28bf7241.chunk.css.map": "/portfolio/static/css/main.28bf7241.chunk.css.map",
     "static/js/2.041ac3bb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.041ac3bb.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio/static/media/Outfit-Medium.fea7d551.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.5483d5da.js",
     "static/js/2.041ac3bb.chunk.js",
-    "static/css/main.94108309.chunk.css",
-    "static/js/main.aa117b45.chunk.js"
+    "static/css/main.28bf7241.chunk.css",
+    "static/js/main.477494a4.chunk.js"
   ]
 }
