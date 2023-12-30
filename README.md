@@ -19,7 +19,7 @@ OR
 yarn install
 ```
 
-### 2. Run the development server
+### 3. Run the development server
 ```bash
 yarn dev
 ```
