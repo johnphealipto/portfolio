@@ -39,7 +39,7 @@ export const SOCIAL_LINKS = [
   },
 ];
 
-export const PROJECTS = [
+export const PROJECTS: ProjectCardProps[] = [
   {
     name: "Island Luxury Property Listings",
     image: IslandLuxury,

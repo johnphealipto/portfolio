@@ -1,8 +1,8 @@
 import Title from "@/components/title";
-import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "./constant";
-import ProjectCard from "../components/project";
+import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "@/utils/constant";
 import CustomButton from "@/components/button";
 import CustomLink from "@/components/link";
+import ProjectCard from "@/components/project-card";
 
 const Home = () => {
   return (
@@ -138,12 +138,12 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
           <div className="flex flex-col gap-8">
             {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
-              <ProjectCard key={idx} project={project} />
+              <ProjectCard key={idx} {...project} />
             ))}
           </div>
           <div className="flex flex-col gap-8">
             {PROJECTS.filter((_, idx) => idx % 2 !== 0).map((project, idx) => (
-              <ProjectCard key={idx} project={project} />
+              <ProjectCard key={idx} {...project} />
             ))}
           </div>
         </div>
