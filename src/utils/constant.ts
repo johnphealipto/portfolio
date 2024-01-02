@@ -59,7 +59,7 @@ export const PROJECTS: ProjectCardProps[] = [
   },
   {
     name: "johnadibe.vercel.app",
-    desc: "Of course, my personal portfolio 😎. The codebase is publicly available for use.",
+    desc: "Of course, my personal portfolio. Designed and developed by yours truly. The code is publicly available for use, with attribution.",
     date: "Nov 10, 2023",
     stacks: [
       "React.js + Vite.js",
@@ -74,7 +74,7 @@ export const PROJECTS: ProjectCardProps[] = [
   {
     name: "Em2gee Foods",
     image: Em2geeFoods,
-    desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery 😄.",
+    desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery.",
     date: "December 27, 2020",
     stacks: ["jQuery", "Javascript", "HTML", "CSS"],
     live: "https://johnphealipto.github.io/em2gee-foods/",

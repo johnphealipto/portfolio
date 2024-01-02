@@ -16,8 +16,8 @@ const Home = () => {
             Frontend Engineer
           </h2>
           <p className="text-zinc-500 text-base sm:text-lg font-light max-w-lg animate-fade-in">
-            I'm passionate about developing cutting-edge solutions and
-            implementing scalable web and mobile applications.
+            I specialize in meticulously developing accessible web products and
+            cross-platform solutions.
           </p>
           <div className="flex gap-5 mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
@@ -39,53 +39,23 @@ const Home = () => {
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
-                My name is <span className="text-zinc-50">John</span>, and my
-                journey from a mathematics teacher to a seasoned frontend
-                developer has been nothing short of a thrilling adventure.
-                Graduating from the{" "}
+                My journey from a Mathematics teacher to a frontend developer
+                has been a thrilling adventure. After I graduated from the{" "}
                 <CustomLink
                   href="https://www.unn.edu.ng/"
                   text="University of Nigeria, Nsukka"
                   target="_blank"
                   withIcon
                 />
-                , with a B.Sc in Mathematics, I delved into academia. My love
-                for imparting knowledge led me to pursue a career in teaching
-                mathematics at secondary schools immediately after graduating.
+                , with a Bachelor's Degree in Mathematics Education, I started
+                teaching Mathematics at secondary schools which lasted about 2
+                years.
               </p>
               <p>
-                While I embraced the role of an educator, I dearly nurtured the
-                zeal to get acquainted with things on the web and how they came
-                to be. So, in 2019 I relocated to the southwestern part of
-                Nigeria, precisely{" "}
-                <CustomLink
-                  href="https://www.google.com/search?q=Lagos%2C+Nigeria&oq=Lagos%2C+Nigeria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjE1OWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                  text="Lagos State"
-                  target="_blank"
-                  withIcon
-                />{" "}
-                where I decided to try something new. I found myself working in
-                customer service roles. This role allowed me to broaden my skill
-                set while simultaneously mastering the art of coding, countless
-                hours on weekends, and any other possible time I could spare.
-              </p>
-              <p>
-                Fate had it this time, and an unexpected opportunity presented
-                itself. A{" "}
-                <CustomLink
-                  href="https://www.outcess.com/"
-                  text="reputable firm"
-                  target="_blank"
-                  withIcon
-                />{" "}
-                where I was employed as a customer service agent had an in-house
-                opening for a frontend developer. I seized this golden
-                opportunity and enthusiastically stepped into the world of web
-                development. Thanks to the extra hours of dedication.
-              </p>
-              <p>
-                Today, I've had the privilege of building software for a
-                business process{" "}
+                I had always been puzzled about things on the web and how they
+                came about. So in 2020, I focused more on web programming, its
+                concept and practices. Fast-forward to today, I've had the
+                privilege of building accessible products for a business process{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
                   text="outsourcing company"
@@ -99,10 +69,22 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />
-                , and startups. I'm driven by a passion for problem-solving
-                while committed to lifelong learning and self-improvement.
-                Currently focused on building quality, user-centric, and
-                scalable products.
+                , and currently building products for clients at{" "}
+                <CustomLink
+                  href="https://www.thrindlebusiness.com/"
+                  text="Thrindle"
+                  target="_blank"
+                  withIcon
+                />{" "}
+                while learning Web3D at night.
+              </p>
+              <p>
+                I'm also passionate about the tech community and assisting
+                newbies in finding their path in tech. I have mentored a
+                developer through various stages, offering guidance on best
+                practices and sharing insights. In light of this, I remain
+                steadfast in my commitment to lifelong learning and
+                self-improvement.
               </p>
             </div>
           </div>
@@ -152,14 +134,13 @@ const Home = () => {
         <div className="flex flex-col gap-7 items-center text-center mt-14">
           <Title title="Let's Talk" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
-            If you have any questions or ideas, feel free to call me at{" "}
-            <CustomLink text="(234) 814-172-6099" href="tel:2348141726099" /> or
-            email me at{" "}
+            If you have any question, proposal or idea, I'll be available for a
+            chat via{" "}
             <CustomLink
               text="johnadibe450@gmail.com"
               href="mailto:johnadibe450@gmail.com"
             />
-            , I'm eagerly ready to collaborate.
+            . Don't be a stranger :)
           </p>
           <p>OR</p>
           <div className="flex text-center items-center">

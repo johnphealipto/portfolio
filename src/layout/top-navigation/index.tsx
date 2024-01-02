@@ -3,7 +3,7 @@ import Logo from "@/assets/icons/john.svg?react";
 import CustomButton from "@/components/button";
 import useTopNavigation from "./hooks/useTopNavigation";
 
-import "./nav.scss";
+import "@/assets/styles/nav.scss";
 
 const NAV_ITEMS = [
   { path: "#about", name: "About" },
