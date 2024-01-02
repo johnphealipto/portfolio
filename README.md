@@ -31,9 +31,9 @@ yarn install
 yarn dev
 ```
 
-## Cloning / Forking
+## 🚨 Cloning or Forking
 
-**Disclosure**: by using this code for your own website, there will be an attribution.
+**Disclosure**: By using this code for your own website, there will be an attribution.
 
 I'll appreciate it if you do, in order to shame plagiarism 😎
 
