@@ -32,4 +32,4 @@ I'll appreciate if you do, so this repository can be known by others too 😎
 
 Please remove all of my personal information (about me, projects, images, etc.) - also edit the ``meta tags`` in ``index.html`` before deploying your own version of this site.
 
-Also personalize the **og** image in ``public/og.png``
+Also personalize the **open graph** image in ``public/og.png``
