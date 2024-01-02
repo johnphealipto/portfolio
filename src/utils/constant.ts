@@ -23,6 +23,8 @@ import {
 } from "@/assets/icons";
 import IslandLuxury from "@/assets/island-luxury.png";
 import Em2geeFoods from "@/assets/em2gee-foods.png";
+import ResumeAndLetter from "@/assets/resume-and-letter.png";
+import ClientModule from "@/assets/client-module.png";
 
 export const SOCIAL_LINKS = [
   {
@@ -51,11 +53,13 @@ export const PROJECTS: ProjectCardProps[] = [
       "https://www.figma.com/file/oNGu5qBAb4nsXegrFb0rcF/Island-Luxury?type=design&node-id=0%3A1&mode=design&t=7WflUGt9N3PD7N8f-1",
   },
   {
-    name: "AK Pressure Wash",
-    desc: "Trusted pressure washing service provider.",
-    date: "Jul 30, 2023",
-    stacks: ["Next.js", "Typescript", "Tailwind CSS", "SASS", "Google Map"],
-    live: "https://www.akpressurewash.com/",
+    name: "Em2gee Foods",
+    image: Em2geeFoods,
+    desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery.",
+    date: "Dec 27, 2020",
+    stacks: ["jQuery", "Javascript", "HTML", "CSS"],
+    live: "https://johnphealipto.github.io/em2gee-foods/",
+    code: "https://github.com/johnphealipto/em2gee-foods",
   },
   {
     name: "johnadibe.vercel.app",
@@ -72,13 +76,21 @@ export const PROJECTS: ProjectCardProps[] = [
     code: "https://github.com/johnphealipto/portfolio",
   },
   {
-    name: "Em2gee Foods",
-    image: Em2geeFoods,
-    desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery.",
-    date: "December 27, 2020",
-    stacks: ["jQuery", "Javascript", "HTML", "CSS"],
-    live: "https://johnphealipto.github.io/em2gee-foods/",
-    code: "https://github.com/johnphealipto/em2gee-foods",
+    name: "Résumé and Cover Letter template",
+    image: ResumeAndLetter,
+    desc: "Developed a resume and cover letter template with React-PDF (renderer). I have landed two jobs with this template and it's publicly available for use.",
+    date: "Oct 31, 2023",
+    stacks: ["React.js + Vite.js", "Typescript", "@react-pdf/renderer"],
+    code: "https://github.com/johnphealipto/resume-and-letter",
+  },
+  {
+    name: "Client Module",
+    image: ClientModule,
+    desc: "Built a Client's Loan Report dashboard. This project was aimed at testing my skills in developing a UI design while paying attention to details and efficient frontend development.",
+    date: "Dec 18, 2021",
+    stacks: ["React.js", "Javascript", "CSS", "Chart.js"],
+    code: "https://github.com/johnphealipto/client-module",
+    live: "https://client-module.netlify.app/",
   },
 ];
 

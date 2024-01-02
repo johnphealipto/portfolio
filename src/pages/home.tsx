@@ -34,22 +34,22 @@ const Home = () => {
         </div>
       </section>
       <section id="about" className="container pt-24 animate-fade-in">
-        <div className="bg-card p-5 sm:p-14 md:px-16 md:py-14 border">
-          <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 pb-8 mb-8 border-b">
+        <div className="p-5 md:p-14 lg:p-16 bg-card border">
+          <div className="flex flex-col md:flex-row justify-between gap-7 md:gap-14 sm:gap-10 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
-                My journey from a Mathematics teacher to a frontend developer
-                has been a thrilling adventure. After I graduated from the{" "}
+                My transition from a Mathematics teacher to a frontend developer
+                has been a thrilling adventure. Upon completing my Bachelor of
+                Science in Mathematics Education at the{" "}
                 <CustomLink
                   href="https://www.unn.edu.ng/"
                   text="University of Nigeria, Nsukka"
                   target="_blank"
                   withIcon
                 />
-                , with a Bachelor's Degree in Mathematics Education, I started
-                teaching Mathematics at secondary schools which lasted about 2
-                years.
+                , I began my career as a Mathematics teacher at secondary
+                schools, and this role continued for approximately two years.
               </p>
               <p>
                 I had always been puzzled about things on the web and how they
@@ -79,11 +79,10 @@ const Home = () => {
                 while learning Web3D at night.
               </p>
               <p>
-                I'm also passionate about the tech community and assisting
-                newbies in finding their path in tech. I have mentored a
-                developer through various stages, offering guidance on best
-                practices and sharing insights. In light of this, I remain
-                steadfast in my commitment to lifelong learning and
+                I'm also about contributing to the tech community. I have
+                mentored a developer through various stages, offering guidance
+                on best practices and sharing insights. In light of this, I
+                remain steadfast in my commitment to lifelong learning and
                 self-improvement.
               </p>
             </div>

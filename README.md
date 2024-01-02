@@ -31,7 +31,7 @@ yarn install
 yarn dev
 ```
 
-## 🚨 Cloning or Forking
+## 🚨 Cloning or Forking this repo
 
 **Disclosure**: By using this code for your own website, there will be an attribution.
 
