@@ -16,8 +16,8 @@ const Home = () => {
             Frontend Engineer
           </h2>
           <p className="text-zinc-500 text-base sm:text-lg font-light max-w-lg animate-fade-in">
-            I specialize in meticulously developing accessible web products and
-            cross-platform solutions.
+            I specialize in meticulous development of accessible web products
+            and cross-platform solutions.
           </p>
           <div className="flex gap-5 mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
@@ -80,10 +80,10 @@ const Home = () => {
               </p>
               <p>
                 I'm also about contributing to the tech community. I have
-                mentored a developer through various stages, offering guidance
-                on best practices and sharing insights. In light of this, I
-                remain steadfast in my commitment to lifelong learning and
-                self-improvement.
+                mentored quite a few developers through various stages, offering
+                guidance on best practices and sharing insights. In light of
+                this, I remain steadfast in my commitment to lifelong learning
+                and self-improvement.
               </p>
             </div>
           </div>
