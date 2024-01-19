@@ -44,7 +44,7 @@ const Home = () => {
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
-                It was thrilling transitioning from a mathematics teacher to a
+                It was a thrilling transition from a mathematics teacher to a
                 frontend developer. Upon completing my Bachelor of Science in
                 Mathematics Education at the{" "}
                 <CustomLink
