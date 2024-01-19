@@ -16,7 +16,11 @@ const TopNavigation = () => {
 
   return (
     <header
-      className="flex items-center justify-between h-16 px-4 md:px-12 border animate-fade-in transition-all duration-300"
+      className={classNames(
+        "bg-dark/80 flex items-center justify-between h-16 px-4 md:px-12",
+        "border animate-fade-in transition-all duration-300 fixed z-50",
+        "before:absolute before:inset-0 before:backdrop-blur-lg before:-z-10"
+      )}
       style={{
         top,
         right: margin,

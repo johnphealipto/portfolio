@@ -45,7 +45,7 @@ export const PROJECTS: ProjectCardProps[] = [
   {
     name: "Island Luxury Property Listings",
     image: IslandLuxury,
-    desc: "A web application with varieties of property listings ranging from Flats, Houses, Land & Commercial Property. I designed and developed the website together with its admin dashboard.",
+    desc: "A web application with varieties of property listings ranging from Flats, Houses, Land & Commercial Property. I designed and developed the website and its admin dashboard.",
     date: "Feb 10, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux"],
     live: "https://island-luxury-demo.netlify.app/",
@@ -55,7 +55,7 @@ export const PROJECTS: ProjectCardProps[] = [
   {
     name: "Em2gee Foods",
     image: Em2geeFoods,
-    desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery.",
+    desc: "A branded website for a food industry that processes and produces bean flour. This project is my first attempt building a full-blown static website.",
     date: "Dec 27, 2020",
     stacks: ["jQuery", "Javascript", "HTML", "CSS"],
     live: "https://johnphealipto.github.io/em2gee-foods/",
@@ -78,7 +78,7 @@ export const PROJECTS: ProjectCardProps[] = [
   {
     name: "Résumé and Cover Letter template",
     image: ResumeAndLetter,
-    desc: "Developed a resume and cover letter template with React-PDF (renderer). I have landed two jobs with this template and it's publicly available for use.",
+    desc: "Developed a résumé and cover letter template with React-PDF (renderer). I chose to develop my own template so I can have more control over the structure and aesthetics. I also have landed two offers with this template. Feel free to clone for personal use.",
     date: "Oct 31, 2023",
     stacks: ["React.js + Vite.js", "Typescript", "@react-pdf/renderer"],
     code: "https://github.com/johnphealipto/resume-and-letter",
@@ -86,7 +86,7 @@ export const PROJECTS: ProjectCardProps[] = [
   {
     name: "Client Module",
     image: ClientModule,
-    desc: "Built a Client's Loan Report dashboard. This project was aimed at testing my skills in developing a UI design while paying attention to details and efficient frontend development.",
+    desc: "Built a Client's Loan Report dashboard. This project was aimed at testing my skills in developing a UI design while paying attention to details and efficient UI development.",
     date: "Dec 18, 2021",
     stacks: ["React.js", "Javascript", "CSS", "Chart.js"],
     code: "https://github.com/johnphealipto/client-module",
@@ -98,8 +98,8 @@ export const TECH_STACKS_TOOLS = [
   {
     title: "Technologies",
     collections: [
-      { icon: JavascriptIcon, name: "Javascript" },
       { icon: TypescriptIcon, name: "Typescript" },
+      { icon: JavascriptIcon, name: "Javascript" },
       { icon: ReactIcon, name: "React.js" },
       { icon: NextJSIcon, name: "Next.js" },
       { icon: ReduxIcon, name: "Redux" },

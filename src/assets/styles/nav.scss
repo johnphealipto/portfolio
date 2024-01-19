@@ -1,18 +1,6 @@
 @import "@/assets/styles/variables";
 
 header {
-  background-color: transparent;
-  position: fixed;
-  z-index: 99;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    backdrop-filter: blur(15px);
-    inset: 0;
-  }
-
   nav a.active {
     position: relative;
     color: white !important;

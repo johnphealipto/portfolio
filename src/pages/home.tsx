@@ -9,6 +9,11 @@ const Home = () => {
     <>
       <section id="hero" className="container flex pt-24 min-h-[60vh]">
         <div className="hero-content flex flex-col gap-4 items-center text-center m-auto">
+          {/* <div className="flex animate-fade-in gap-4">
+            <div className="h-6 w-6 border border-orange-strong rounded-full" />
+            <div className="h-6 w-6 border border-orange-strong" />
+            <div className="h-6 w-6 border border-orange-strong rounded-full" />
+          </div> */}
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
             John Adibe
           </h1>
@@ -39,21 +44,21 @@ const Home = () => {
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
-                My transition from a Mathematics teacher to a frontend developer
-                has been a thrilling adventure. Upon completing my Bachelor of
-                Science in Mathematics Education at the{" "}
+                It was thrilling transitioning from a mathematics teacher to a
+                frontend developer. Upon completing my Bachelor of Science in
+                Mathematics Education at the{" "}
                 <CustomLink
                   href="https://www.unn.edu.ng/"
                   text="University of Nigeria, Nsukka"
                   target="_blank"
                   withIcon
                 />
-                , I began my career as a Mathematics teacher at secondary
+                , I began my career as a mathematics teacher at secondary
                 schools, and this role continued for approximately two years.
               </p>
               <p>
                 I had always been puzzled about things on the web and how they
-                came about. So in 2020, I focused more on web programming, its
+                came about. In 2020, I focused more on web programming, its
                 concept and practices. Fast-forward to today, I've had the
                 privilege of building accessible products for a business process{" "}
                 <CustomLink
@@ -69,7 +74,7 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />
-                , and currently building products for clients at{" "}
+                , and currently at{" "}
                 <CustomLink
                   href="https://www.thrindlebusiness.com/"
                   text="Thrindle"
@@ -80,10 +85,10 @@ const Home = () => {
               </p>
               <p>
                 I'm also about contributing to the tech community. I have
-                mentored quite a few developers through various stages, offering
-                guidance on best practices and sharing insights. In light of
-                this, I remain steadfast in my commitment to lifelong learning
-                and self-improvement.
+                connected with quite a few developers through various platforms,
+                offering guidance on best practices and also sharing insights.
+                In light of this, I remain steadfast in my commitment to
+                lifelong learning and self-improvement.
               </p>
             </div>
           </div>
@@ -91,7 +96,7 @@ const Home = () => {
             {TECH_STACKS_TOOLS.map((tech, idx) => (
               <div key={idx}>
                 <h3 className="text-zinc-50 font-bold text-lg sm:text-xl mb-2">
-                  {tech.title}:
+                  {tech.title}
                 </h3>
                 <div className="flex gap-4 flex-wrap">
                   {tech.collections.map((item, idx) => (
@@ -112,8 +117,7 @@ const Home = () => {
         <div className="max-w-2xl">
           <Title title="Projects" />
           <p className="text-zinc-500 text-lg mt-4">
-            These are some of the amazing projects I've worked or collaborated
-            on.
+            These are some of the amazing projects I've worked on.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
