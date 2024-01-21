@@ -44,8 +44,8 @@ const Home = () => {
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
-                It was a thrilling transition from a mathematics teacher to a
-                frontend developer. Upon completing my Bachelor of Science in
+                I am a seasoned frontend developer who transitioned from a
+                mathematics teacher. Upon completing my Bachelor of Science in
                 Mathematics Education at the{" "}
                 <CustomLink
                   href="https://www.unn.edu.ng/"
@@ -59,7 +59,7 @@ const Home = () => {
               <p>
                 I had always been puzzled about things on the web and how they
                 came about. In 2020, I focused more on web programming, its
-                concept and practices. Fast-forward to today, I've had the
+                concepts, and practices. Fast-forward to today, I've had the
                 privilege of building accessible products for a business process{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
@@ -81,14 +81,14 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />{" "}
-                while learning Web3D at night.
+                while learning Three.js(WebGL) at night.
               </p>
               <p>
                 I'm also about contributing to the tech community. I have
-                connected with quite a few developers through various platforms,
-                offering guidance on best practices and also sharing insights.
-                In light of this, I remain steadfast in my commitment to
-                lifelong learning and self-improvement.
+                connected with several developers through various platforms,
+                sharing insights and best practices. In light of this, I remain
+                steadfast in my commitment to lifelong learning and
+                self-improvement.
               </p>
             </div>
           </div>
@@ -137,13 +137,12 @@ const Home = () => {
         <div className="flex flex-col gap-7 items-center text-center mt-14">
           <Title title="Let's Talk" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
-            If you have any question, proposal or idea, I'll be available for a
-            chat via{" "}
+            For any questions, or ideas, I'll be available for a chat via{" "}
             <CustomLink
               text="johnadibe450@gmail.com"
               href="mailto:johnadibe450@gmail.com"
             />
-            . Don't be a stranger :)
+            . Don't be a stranger 👋
           </p>
           <p>OR</p>
           <div className="flex text-center items-center">
