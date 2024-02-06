@@ -7,18 +7,16 @@ import ProjectCard from "@/components/project-card";
 const Home = () => {
   return (
     <>
-      <section id="hero" className="container flex pt-24 min-h-[60vh]">
+      <section
+        id="hero"
+        className="container flex pt-40 min-h-fit md:min-h-[60vh]"
+      >
         <div className="hero-content flex flex-col gap-4 items-center text-center m-auto">
-          {/* <div className="flex animate-fade-in gap-4">
-            <div className="h-6 w-6 border border-orange-strong rounded-full" />
-            <div className="h-6 w-6 border border-orange-strong" />
-            <div className="h-6 w-6 border border-orange-strong rounded-full" />
-          </div> */}
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
             John Adibe
           </h1>
           <h2 className="text-lg sm:text-2xl animate-fade-in">
-            Frontend Engineer
+            Frontend Developer at Thrindle
           </h2>
           <p className="text-zinc-500 text-base sm:text-lg font-light max-w-lg animate-fade-in">
             I specialize in meticulous development of accessible web products
@@ -42,10 +40,10 @@ const Home = () => {
         <div className="p-5 md:p-14 lg:p-16 bg-card border">
           <div className="flex flex-col md:flex-row justify-between gap-7 md:gap-14 sm:gap-10 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
-            <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
+            <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-sm sm:text-base">
               <p>
-                I am a seasoned frontend developer who transitioned from a
-                mathematics teacher. Upon completing my Bachelor of Science in
+                I'm an enthusiastic frontend developer who transitioned from a
+                mathematics teacher. After completing my Bachelor of Science in
                 Mathematics Education at the{" "}
                 <CustomLink
                   href="https://www.unn.edu.ng/"
@@ -53,7 +51,7 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />
-                , I began my career as a mathematics teacher at secondary
+                , I began my career as a mathematics teacher in secondary
                 schools, and this role continued for approximately two years.
               </p>
               <p>
@@ -80,8 +78,8 @@ const Home = () => {
                   text="Thrindle"
                   target="_blank"
                   withIcon
-                />{" "}
-                while learning Three.js(WebGL) at night.
+                />
+                .
               </p>
               <p>
                 I'm also about contributing to the tech community. I have
@@ -113,28 +111,28 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="projects" className="container pt-40">
+      <section id="projects" className="container pt-24 md:pt-40">
         <div className="max-w-2xl">
           <Title title="Projects" />
-          <p className="text-zinc-500 text-lg mt-4">
-            These are some of the amazing projects I've worked on.
+          <p className="text-zinc-500 text-lg mt-3">
+            These are some of the projects I've worked on.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
-          <div className="flex flex-col gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-10">
+          <div className="flex flex-col gap-5 md:gap-8">
             {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
               <ProjectCard key={idx} {...project} />
             ))}
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-5 md:gap-8">
             {PROJECTS.filter((_, idx) => idx % 2 !== 0).map((project, idx) => (
               <ProjectCard key={idx} {...project} />
             ))}
           </div>
         </div>
       </section>
-      <section id="contact" className="container pt-40 pb-40">
-        <div className="flex flex-col gap-7 items-center text-center mt-14">
+      <section id="contact" className="container py-24 md:py-40">
+        <div className="flex flex-col gap-7 items-center text-center mt-10">
           <Title title="Let's Talk" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
             For any questions, or ideas, I'll be available for a chat via{" "}
