@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         orange: {
-          strong: "#ca3300",
+          strong: "#ff4000",
         },
         dark: "#0a0a0a",
         card: " rgb(255 255 255 / .015)",

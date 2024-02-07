@@ -1,37 +1,31 @@
 import { FigmaOutlinedIcon, GithubIcon, LinkSquareIcon } from "@/assets/icons";
+import classNames from "classnames";
+
+const IconLink = ({ href, icon: Icon }) => (
+  <a
+    href={href}
+    className={classNames(
+      "pb-1 hover:text-orange-strong",
+      "border-b border-dashed border-orange-strong transition duration-300"
+    )}
+    target="_blank"
+  >
+    <Icon width={21} height={21} />
+  </a>
+);
 
 const ProjectCard = (props: ProjectCardProps) => {
   return (
     <div className="bg-card flex flex-col gap-4 p-3 md:p-6 border">
-      <div className="flex justify-between items-center">
-        <span className="text-zinc-400 text-sm">{props.date}</span>
+      <div className="flex justify-between items-center text-zinc-400">
+        <span className="text-sm">{props.date}</span>
         <div className="flex gap-4 items-center">
           {props.figma ? (
-            <a
-              href={props.figma}
-              className="text-zinc-500 transition duration-300 hover:text-orange-strong"
-              target="_blank"
-            >
-              <FigmaOutlinedIcon width={21} height={21} />
-            </a>
+            <IconLink href={props.figma} icon={FigmaOutlinedIcon} />
           ) : null}
-          {props.code ? (
-            <a
-              href={props.code}
-              className="text-zinc-500 transition duration-300 hover:text-orange-strong"
-              target="_blank"
-            >
-              <GithubIcon width={20} height={20} />
-            </a>
-          ) : null}
+          {props.code ? <IconLink href={props.code} icon={GithubIcon} /> : null}
           {props.live ? (
-            <a
-              href={props.live}
-              className="text-zinc-500 transition duration-300 hover:text-orange-strong"
-              target="_blank"
-            >
-              <LinkSquareIcon width={20} height={20} />
-            </a>
+            <IconLink href={props.live} icon={LinkSquareIcon} />
           ) : null}
         </div>
       </div>

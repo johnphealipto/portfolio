@@ -19,8 +19,8 @@ const Home = () => {
             Frontend Developer at Thrindle
           </h2>
           <p className="text-zinc-500 text-base sm:text-lg font-light max-w-lg animate-fade-in">
-            I specialize in meticulous development of accessible web products
-            and cross-platform solutions.
+            I specialize in meticulously crafting accessible web products and
+            cross-platform solutions.
           </p>
           <div className="flex gap-5 mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
@@ -43,8 +43,8 @@ const Home = () => {
             <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-sm sm:text-base">
               <p>
                 I'm an enthusiastic frontend developer who transitioned from a
-                mathematics teacher. After completing my Bachelor of Science in
-                Mathematics Education at the{" "}
+                seasoned mathematics teacher. After completing my Bachelor of
+                Science in Mathematics Education at the{" "}
                 <CustomLink
                   href="https://www.unn.edu.ng/"
                   text="University of Nigeria, Nsukka"
@@ -55,8 +55,8 @@ const Home = () => {
                 schools, and this role continued for approximately two years.
               </p>
               <p>
-                I had always been puzzled about things on the web and how they
-                came about. In 2020, I focused more on web programming, its
+                While I served as an educator, I was always puzzled about things
+                on the web. In 2020, I focused more on web programming, its
                 concepts, and practices. Fast-forward to today, I've had the
                 privilege of building accessible products for a business process{" "}
                 <CustomLink
@@ -82,10 +82,9 @@ const Home = () => {
                 .
               </p>
               <p>
-                I'm also about contributing to the tech community. I have
-                connected with several developers through various platforms,
-                sharing insights and best practices. In light of this, I remain
-                steadfast in my commitment to lifelong learning and
+                I enjoy creating innovative frontend experiences using React
+                (Next.js, Vite.js) and TypeScript. I like to push the boundaries
+                of the web and I remain committed to lifelong learning and
                 self-improvement.
               </p>
             </div>
@@ -135,18 +134,18 @@ const Home = () => {
         <div className="flex flex-col gap-7 items-center text-center mt-10">
           <Title title="Let's Talk" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
-            For any questions, or ideas, I'll be available for a chat via{" "}
+            If you want to discuss an opportunity with me or you have questions
+            or ideas, feel free to reach out via{" "}
             <CustomLink
               text="johnadibe450@gmail.com"
               href="mailto:johnadibe450@gmail.com"
             />
-            . Don't be a stranger 👋
           </p>
           <p>OR</p>
           <div className="flex text-center items-center">
             <CustomButton
               text="Meeting with John"
-              href="https://calendly.com/john-adibe"
+              href="https://calendly.com/john-adibe/15-minute-meeting"
               icon="calendar"
             />
           </div>
