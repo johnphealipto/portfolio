@@ -1,16 +1,12 @@
 import { FigmaOutlinedIcon, GithubIcon, LinkSquareIcon } from "@/assets/icons";
-import classNames from "classnames";
 
 const IconLink = ({ href, icon: Icon }) => (
   <a
     href={href}
-    className={classNames(
-      "pb-1 hover:text-orange-strong",
-      "border-b border-dashed border-orange-strong transition duration-300"
-    )}
+    className="hover:text-orange-strong transition duration-300"
     target="_blank"
   >
-    <Icon width={21} height={21} />
+    <Icon width={22} height={22} />
   </a>
 );
 

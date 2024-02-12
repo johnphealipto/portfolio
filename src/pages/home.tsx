@@ -134,8 +134,8 @@ const Home = () => {
         <div className="flex flex-col gap-7 items-center text-center mt-10">
           <Title title="Let's Talk" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
-            If you want to discuss an opportunity with me or you have questions
-            or ideas, feel free to reach out via{" "}
+            If you want to discuss an opportunity with me or have any questions
+            or comments I would love to hear them. You can send an email to{" "}
             <CustomLink
               text="johnadibe450@gmail.com"
               href="mailto:johnadibe450@gmail.com"
