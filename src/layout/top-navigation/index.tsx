@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import Logo from "@/assets/icons/john.svg?react";
+import Logo from "@/assets/icons/brand.svg?react";
 import CustomButton from "@/components/button";
 import useTopNavigation from "./hooks/useTopNavigation";
 
@@ -28,7 +28,7 @@ const TopNavigation = () => {
       }}
     >
       <a href="/" className="text-zinc-50">
-        <Logo width={100} height={100} />
+        <Logo width={60} height={35} />
       </a>
       <nav
         className={classNames("border-l md:border-l-0", {
