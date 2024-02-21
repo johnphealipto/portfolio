@@ -1,14 +1,12 @@
 import {
   AndroidStudioIcon,
   BlenderIcon,
-  CssIcon,
   ExpoIcon,
   FigmaIcon,
   FirebaseIcon,
   GitIcon,
   GithubIcon,
   GraphqlIcon,
-  HtmlIcon,
   JavascriptIcon,
   LinkedinIcon,
   NextJSIcon,
@@ -30,14 +28,17 @@ export const SOCIAL_LINKS = [
   {
     link: "https://github.com/johnphealipto",
     icon: GithubIcon,
+    name: "GitHub",
   },
   {
     link: "https://www.linkedin.com/in/johnadibe",
     icon: LinkedinIcon,
+    name: "LinkedIn",
   },
   {
     link: "https://twitter.com/johnphealipto",
     icon: TwitterXIcon,
+    name: "Twitter",
   },
 ];
 
@@ -110,8 +111,6 @@ export const TECH_STACKS_TOOLS = [
       { icon: GraphqlIcon, name: "GraphQL" },
       { icon: GitIcon, name: "Git" },
       { icon: FirebaseIcon, name: "Firebase" },
-      { icon: HtmlIcon, name: "HTML" },
-      { icon: CssIcon, name: "CSS" },
     ],
   },
   {

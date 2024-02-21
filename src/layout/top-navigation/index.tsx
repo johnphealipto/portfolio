@@ -4,72 +4,91 @@ import CustomButton from "@/components/button";
 import useTopNavigation from "./hooks/useTopNavigation";
 
 import "@/assets/styles/nav.scss";
+import { DashboardSquareIcon, MailAtSignIcon, UserIcon } from "@/assets/icons";
+import { SOCIAL_LINKS } from "@/utils/constant";
 
 const NAV_ITEMS = [
-  { path: "#about", name: "About" },
-  { path: "#projects", name: "Projects" },
-  { path: "#contact", name: "Contact" },
+  { path: "#about", name: "About", icon: UserIcon },
+  { path: "#projects", name: "Projects", icon: DashboardSquareIcon },
+  { path: "#contact", name: "Contact", icon: MailAtSignIcon },
 ];
 
 const TopNavigation = () => {
-  const { menu, top, margin, setMenu, lenis } = useTopNavigation();
+  const { menu, top, setMenu, lenis } = useTopNavigation();
 
   return (
     <header
-      className={classNames(
-        "bg-dark/80 flex items-center justify-between h-16 px-4 md:px-12",
-        "border animate-fade-in transition-all duration-300 fixed z-50",
-        "before:absolute before:inset-0 before:backdrop-blur-lg before:-z-10"
-      )}
-      style={{
-        top,
-        right: margin,
-        left: margin,
-      }}
+      className="w-full animate-fade-in transition-all duration-300 fixed z-50"
+      style={{ top }}
     >
-      <a href="/" className="text-zinc-50">
-        <Logo width={60} height={35} />
-      </a>
-      <nav
-        className={classNames("border-l md:border-l-0", {
-          "nav-visible": menu,
-        })}
-      >
-        {NAV_ITEMS.map((item, idx) => (
-          <a
-            key={idx}
-            href={item.path}
-            className="text-zinc-500 text-base h-fit px-5 transition-all"
-            onClick={() => {
-              setMenu(false);
-              lenis.scrollTo(item.path);
-            }}
-          >
-            {item.name}
+      <div className="container relative bg-dark">
+        <div className="flex bg-card items-center justify-between h-16 border px-5">
+          <a href="/" className="text-zinc-50">
+            <Logo width={100} height={30} />
           </a>
-        ))}
-        <div className="block md:hidden mt-5">
-          <CustomButton
-            href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
-            text="Résumé"
-            icon="file-link"
-          />
+          <nav
+            className={classNames("border-l flex md:border-l-0", {
+              "nav-visible": menu,
+            })}
+          >
+            {NAV_ITEMS.map((item, idx) => (
+              <a
+                key={idx}
+                href={item.path}
+                className={classNames(
+                  "text-zinc-500 text-base flex items-center gap-3 h-fit px-5 transition-all",
+                  "border md:border-none py-2.5 md:py-0 bg-card md:bg-transparent"
+                )}
+                onClick={() => {
+                  setMenu(false);
+                  lenis.scrollTo(item.path);
+                }}
+              >
+                <span className="md:hidden">
+                  <item.icon className="w-5 h-5" />
+                </span>
+                {item.name}
+              </a>
+            ))}
+            <div className="block md:hidden mt-2">
+              <CustomButton
+                href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
+                text="Résumé"
+                icon="file-link"
+              />
+              <div className="mt-8 space-y-3">
+                {SOCIAL_LINKS.map((item, idx) => (
+                  <a
+                    href={item.link}
+                    key={idx}
+                    className="text-zinc-500 flex items-center gap-4"
+                    target="_blank"
+                  >
+                    <div className="border p-2 rounded-lg bg-card">
+                      <item.icon width={20} height={20} />
+                    </div>
+                    <span className="text-zinc-400">{item.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </nav>
+          <div className="hidden md:block">
+            <CustomButton
+              href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
+              text="Résumé"
+              icon="file-link"
+            />
+          </div>
+          <div
+            className={classNames("menu-btn block md:hidden", { close: menu })}
+            onClick={() => setMenu(!menu)}
+          >
+            {[1, 2, 3].map((_, idx) => (
+              <div key={idx} className="btn-bar bg-zinc-50" />
+            ))}
+          </div>
         </div>
-      </nav>
-      <div className="hidden md:block">
-        <CustomButton
-          href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
-          text="Résumé"
-          icon="file-link"
-        />
-      </div>
-      <div
-        className={classNames("menu-btn block md:hidden", { close: menu })}
-        onClick={() => setMenu(!menu)}
-      >
-        {[1, 2, 3].map((_, idx) => (
-          <div key={idx} className="btn-bar bg-zinc-50" />
-        ))}
       </div>
     </header>
   );

@@ -41,5 +41,5 @@ export default () => {
     });
   };
 
-  return { menu, top, margin, setMenu, lenis };
+  return { menu, top, setMenu, lenis };
 };

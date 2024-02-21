@@ -37,22 +37,16 @@ const Home = () => {
         </div>
       </section>
       <section id="about" className="container pt-24 animate-fade-in">
-        <div className="p-5 md:p-14 lg:p-16 bg-card border">
-          <div className="flex flex-col md:flex-row justify-between gap-7 md:gap-14 sm:gap-10 pb-8 mb-8 border-b">
+        <div className="px-5 py-8 md:p-16 bg-card border">
+          <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-14 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-sm sm:text-base">
               <p>
-                I'm an enthusiastic frontend developer who transitioned from a
-                seasoned mathematics teacher. After completing my Bachelor of
-                Science in Mathematics Education at the{" "}
-                <CustomLink
-                  href="https://www.unn.edu.ng/"
-                  text="University of Nigeria, Nsukka"
-                  target="_blank"
-                  withIcon
-                />
-                , I began my career as a mathematics teacher in secondary
-                schools, and this role continued for approximately two years.
+                I'm a creative developer who transitioned from a seasoned
+                mathematics teacher. After completing my Bachelor of Science in
+                Mathematics Education, I began my career as a mathematics
+                teacher in secondary schools, and this role continued for
+                approximately two years.
               </p>
               <p>
                 While I served as an educator, I was always puzzled about things
@@ -82,10 +76,9 @@ const Home = () => {
                 .
               </p>
               <p>
-                I enjoy creating innovative frontend experiences using React
-                (Next.js, Vite.js) and TypeScript. I like to push the boundaries
-                of the web and I remain committed to lifelong learning and
-                self-improvement.
+                I'm also passionate about 3D web-based experiences. I enjoy
+                pushing the boundaries of the web and I'm committed to lifelong
+                learning and self-improvement.
               </p>
             </div>
           </div>

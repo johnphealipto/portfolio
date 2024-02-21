@@ -11,8 +11,6 @@ import ReduxIcon from "./redux.svg?react";
 import SassIcon from "./sass.svg?react";
 import TailwindIcon from "./tailwind.svg?react";
 import GitIcon from "./git.svg?react";
-import HtmlIcon from "./html.svg?react";
-import CssIcon from "./css.svg?react";
 import GraphqlIcon from "./graphql.svg?react";
 import VscodeIcon from "./vscode.svg?react";
 import FigmaIcon from "./figma.svg?react";
@@ -24,6 +22,9 @@ import ExpoIcon from "./expo.svg?react";
 import CalendarIcon from "./calendar.svg?react";
 import TelephoneIcon from "./telephone.svg?react";
 import FigmaOutlinedIcon from "./figma-outlined.svg?react";
+import UserIcon from "./user.svg?react";
+import DashboardSquareIcon from "./dashboard-square.svg?react";
+import MailAtSignIcon from "./mail-at-sign.svg?react";
 
 export {
   FileLinkIcon,
@@ -39,8 +40,6 @@ export {
   SassIcon,
   TailwindIcon,
   GitIcon,
-  HtmlIcon,
-  CssIcon,
   GraphqlIcon,
   VscodeIcon,
   FigmaIcon,
@@ -51,5 +50,8 @@ export {
   ExpoIcon,
   CalendarIcon,
   TelephoneIcon,
+  UserIcon,
   FigmaOutlinedIcon,
+  DashboardSquareIcon,
+  MailAtSignIcon,
 };
