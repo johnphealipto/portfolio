@@ -8,7 +8,6 @@ export default {
           strong: "#ff4000",
         },
         dark: "#0a0a0a",
-        card: " rgb(255 255 255 / .015)",
       },
       borderColor: {
         DEFAULT: "#1a1a1a",

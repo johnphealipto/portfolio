@@ -4,15 +4,8 @@ header {
   nav a.active {
     position: relative;
     color: white !important;
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: $strong-orange;
-      width: 25%;
-      height: 1px;
-      bottom: -2.5px;
-      left: 50%;
-      translate: -50% 0;
+    span {
+      color: $strong-orange;
     }
   }
 
@@ -66,18 +59,6 @@ header {
 
       &.nav-visible {
         transform: translateX(0%);
-      }
-
-      a.active {
-        position: relative;
-        color: white !important;
-        span {
-          color: $strong-orange;
-        }
-        &::after {
-          content: "";
-          background-color: transparent;
-        }
       }
     }
   }

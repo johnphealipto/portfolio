@@ -12,7 +12,7 @@ const IconLink = ({ href, icon: Icon }) => (
 
 const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <div className="bg-card flex flex-col gap-4 p-3 md:p-6 border">
+    <div className="flex flex-col gap-4 p-3 md:p-6 border">
       <div className="flex justify-between items-center text-zinc-400">
         <span className="text-sm">{props.date}</span>
         <div className="flex gap-4 items-center">

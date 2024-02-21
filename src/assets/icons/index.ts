@@ -24,7 +24,7 @@ import TelephoneIcon from "./telephone.svg?react";
 import FigmaOutlinedIcon from "./figma-outlined.svg?react";
 import UserIcon from "./user.svg?react";
 import DashboardSquareIcon from "./dashboard-square.svg?react";
-import MailAtSignIcon from "./mail-at-sign.svg?react";
+import MailReplyIcon from "./mail-reply.svg?react";
 
 export {
   FileLinkIcon,
@@ -53,5 +53,5 @@ export {
   UserIcon,
   FigmaOutlinedIcon,
   DashboardSquareIcon,
-  MailAtSignIcon,
+  MailReplyIcon,
 };

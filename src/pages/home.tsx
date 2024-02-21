@@ -37,7 +37,7 @@ const Home = () => {
         </div>
       </section>
       <section id="about" className="container pt-24 animate-fade-in">
-        <div className="px-5 py-8 md:p-16 bg-card border">
+        <div className="px-5 py-8 md:p-16 border">
           <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-14 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-sm sm:text-base">
