@@ -23,12 +23,12 @@ const TopNavigation = () => {
     >
       <div className="container relative bg-dark">
         <div className="flex items-center justify-between h-16 border px-5">
-          <a href="/" className="text-zinc-50">
+          <a href="/" className="text-zinc-50 z-50">
             <Logo width={50} height={30} />
           </a>
           <div className="flex items-center gap-8">
             <nav
-              className={classNames("border-l flex md:border-l-0", {
+              className={classNames("flex", {
                 "nav-visible": menu,
               })}
             >
@@ -37,7 +37,7 @@ const TopNavigation = () => {
                   key={idx}
                   href={item.path}
                   className={classNames(
-                    "text-zinc-500 text-base flex items-center gap-3 h-fit",
+                    "text-zinc-400 text-base flex items-center gap-3 h-fit",
                     "border md:border-none py-2.5 md:py-0 px-5 transition-all"
                   )}
                   onClick={() => {
@@ -45,7 +45,7 @@ const TopNavigation = () => {
                     lenis.scrollTo(item.path);
                   }}
                 >
-                  <span className="">
+                  <span className="text-zinc-700">
                     <item.icon className="w-5 h-5" />
                   </span>
                   {item.name}
@@ -62,7 +62,7 @@ const TopNavigation = () => {
                     <a
                       href={item.link}
                       key={idx}
-                      className="text-zinc-500 flex items-center gap-4"
+                      className="text-zinc-700 flex items-center gap-4"
                       target="_blank"
                     >
                       <div className="border p-2">
