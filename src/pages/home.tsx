@@ -19,8 +19,9 @@ const Home = () => {
             Frontend Developer at Thrindle
           </h2>
           <p className="text-zinc-500 text-base sm:text-lg font-light max-w-lg animate-fade-in">
-            I specialize in meticulously crafting accessible web products and
-            cross-platform solutions.
+            <span className="text-orange-strong">Building interfaces</span>.{" "}
+            Creating accessible web products and cross-platform solutions.{" "}
+            <em className="font-serif">Meticulously</em>.
           </p>
           <div className="flex gap-5 mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
@@ -40,13 +41,13 @@ const Home = () => {
         <div className="px-5 py-8 md:p-16 border">
           <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-14 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
-            <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-sm sm:text-base">
+            <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-base">
               <p>
-                I'm a creative developer who transitioned from a seasoned
-                mathematics teacher. After completing my Bachelor of Science in
-                Mathematics Education, I began my career as a mathematics
-                teacher in secondary schools, and this role continued for
-                approximately two years.
+                I'm a frontend developer who transitioned from a seasoned
+                mathematics teacher. I began my career as a mathematics teacher
+                in secondary schools, after completing my Bachelor of Science in
+                Mathematics Education. This role continued for approximately two
+                years.
               </p>
               <p>
                 While I served as an educator, I was always puzzled about things
@@ -77,8 +78,9 @@ const Home = () => {
               </p>
               <p>
                 I'm also passionate about 3D web-based experiences. I enjoy
-                pushing the boundaries of the web and I'm committed to lifelong
-                learning and self-improvement.
+                pushing the boundaries of the web, and I love country music.
+                Now, I'm focused on building interfaces while committed to
+                lifelong learning and self-improvement.
               </p>
             </div>
           </div>

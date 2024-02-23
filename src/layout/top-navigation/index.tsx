@@ -38,7 +38,7 @@ const TopNavigation = () => {
                   href={item.path}
                   className={classNames(
                     "text-zinc-400 text-base flex items-center gap-3 h-fit",
-                    "border md:border-none py-2.5 md:py-0 px-5 transition-all"
+                    "border md:border-none py-2.5 md:py-0 px-3 transition-all"
                   )}
                   onClick={() => {
                     setMenu(false);
