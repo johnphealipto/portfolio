@@ -2,10 +2,10 @@ import classNames from "classnames";
 import Logo from "@/assets/icons/brand.svg?react";
 import CustomButton from "@/components/button";
 import useTopNavigation from "./hooks/useTopNavigation";
-
-import "@/assets/styles/nav.scss";
 import { DashboardSquareIcon, MailReplyIcon, UserIcon } from "@/assets/icons";
 import { SOCIAL_LINKS } from "@/utils/constant";
+
+import "@/assets/styles/nav.scss";
 
 const NAV_ITEMS = [
   { path: "#about", name: "About", icon: UserIcon },
@@ -45,7 +45,7 @@ const TopNavigation = () => {
                     lenis.scrollTo(item.path);
                   }}
                 >
-                  <span className="text-zinc-700">
+                  <span className="text-zinc-700 transition-all duration-500">
                     <item.icon className="w-5 h-5" />
                   </span>
                   {item.name}

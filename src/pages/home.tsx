@@ -44,9 +44,9 @@ const Home = () => {
             <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-base">
               <p>
                 I'm a frontend developer who transitioned from a seasoned
-                mathematics teacher. I began my career as a mathematics teacher
-                in secondary schools, after completing my Bachelor of Science in
-                Mathematics Education. This role continued for approximately two
+                mathematics teacher. After completing my B.Sc in Mathematics
+                Education, I began my career as a mathematics teacher in
+                secondary schools and this role continued for approximately two
                 years.
               </p>
               <p>
