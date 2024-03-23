@@ -37,38 +37,35 @@ const TopNavigation = () => {
                   key={idx}
                   href={item.path}
                   className={classNames(
-                    "text-zinc-400 text-base flex items-center gap-3 h-fit",
-                    "border md:border-none py-2.5 md:py-0 px-3 transition-all"
+                    "text-zinc-400 text-lg md:text-base flex items-center gap-4 md:gap-3 h-fit",
+                    "py-2.5 md:py-0 md:px-4 transition-all"
                   )}
                   onClick={() => {
                     setMenu(false);
                     lenis.scrollTo(item.path);
                   }}
                 >
-                  <span className="text-zinc-700 transition-all duration-500">
+                  <span className="text-zinc-700 transition-all duration-500 border md:border-none p-2 md:p-0">
                     <item.icon className="w-5 h-5" />
                   </span>
                   {item.name}
                 </a>
               ))}
-              <div className="block md:hidden mt-2">
+              <div className="block md:hidden mt-4">
                 <CustomButton
                   href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
                   text="Résumé"
                   icon="file-link"
                 />
-                <div className="mt-8 space-y-3">
+                <div className="mt-8 flex gap-4 justify-center">
                   {SOCIAL_LINKS.map((item, idx) => (
                     <a
                       href={item.link}
                       key={idx}
-                      className="text-zinc-700 flex items-center gap-4"
+                      className="text-zinc-500 p-2"
                       target="_blank"
                     >
-                      <div className="border p-2">
-                        <item.icon width={20} height={20} />
-                      </div>
-                      <span className="text-zinc-400">{item.name}</span>
+                      <item.icon className="w-6 h-6" />
                     </a>
                   ))}
                 </div>

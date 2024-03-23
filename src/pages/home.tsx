@@ -16,12 +16,12 @@ const Home = () => {
             John Adibe
           </h1>
           <h2 className="text-lg sm:text-2xl animate-fade-in">
-            Frontend Developer at Thrindle
+            Frontend Developer at Product Studio
           </h2>
-          <p className="text-zinc-500 text-base sm:text-lg font-light max-w-lg animate-fade-in">
-            <span className="text-orange-strong">Building interfaces</span>.{" "}
-            Creating accessible web products and cross-platform solutions.{" "}
-            <em className="font-serif">Meticulously</em>.
+          <p className="text-zinc-400 text-base sm:text-lg font-light max-w-lg animate-fade-in">
+            <span className="text-orange-strong">Building interfaces</span>. I
+            create accessible web products and cross-platform solutions.{" "}
+            <em className="bg-zinc-50/5 py-1 px-2 font-none">Meticulously.</em>
           </p>
           <div className="flex gap-5 mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
@@ -38,10 +38,10 @@ const Home = () => {
         </div>
       </section>
       <section id="about" className="container pt-24 animate-fade-in">
-        <div className="px-5 py-8 md:p-16 border">
-          <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-14 pb-8 mb-8 border-b">
+        <div className="px-5 py-5 md:p-16 border">
+          <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-14 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
-            <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-base">
+            <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 md:text-base">
               <p>
                 I'm a frontend developer who transitioned from a seasoned
                 mathematics teacher. After completing my B.Sc in Mathematics
@@ -69,8 +69,8 @@ const Home = () => {
                 />
                 , and currently at{" "}
                 <CustomLink
-                  href="https://www.thrindlebusiness.com/"
-                  text="Thrindle"
+                  href="https://www.theproductstudiohq.com/"
+                  text="Product Studio HQ"
                   target="_blank"
                   withIcon
                 />
