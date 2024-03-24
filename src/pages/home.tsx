@@ -16,12 +16,14 @@ const Home = () => {
             John Adibe
           </h1>
           <h2 className="text-lg sm:text-2xl animate-fade-in">
-            Frontend Developer at Product Studio
+            Frontend Developer @ Product Studio
           </h2>
           <p className="text-zinc-400 text-base sm:text-lg font-light max-w-lg animate-fade-in">
             <span className="text-orange-strong">Building interfaces</span>. I
             create accessible web products and cross-platform solutions.{" "}
-            <em className="bg-zinc-50/5 py-1 px-2 font-none">Meticulously.</em>
+            <em className="py-1 px-2 font-serif border text-base">
+              Meticulously.
+            </em>
           </p>
           <div className="flex gap-5 mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
@@ -108,11 +110,11 @@ const Home = () => {
       <section id="projects" className="container pt-24 md:pt-40">
         <div className="max-w-2xl">
           <Title title="Projects" />
-          <p className="text-zinc-500 text-lg mt-3">
+          <p className="text-zinc-500 text-base md:text-lg mt-2">
             These are some of the projects I've worked on.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-4 md:mt-8">
           <div className="flex flex-col gap-5 md:gap-8">
             {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
               <ProjectCard key={idx} {...project} />

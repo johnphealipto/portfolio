@@ -26,7 +26,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         </div>
       </div>
       {props.image ? (
-        <img src={props.image} alt={props.name} className="w-full border" />
+        <img src={props.image} alt={props.name} className="w-full" />
       ) : null}
       <h3 className="text-zinc-50 font-bold text-xl sm:text-2xl">
         {props.name}
