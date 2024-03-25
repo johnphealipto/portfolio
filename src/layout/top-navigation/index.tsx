@@ -45,7 +45,7 @@ const TopNavigation = () => {
                     lenis.scrollTo(item.path);
                   }}
                 >
-                  <span className="text-zinc-700 transition-all duration-500 border md:border-none p-2 md:p-0">
+                  <span className="transition-all duration-500 border md:border-none p-2 md:p-0">
                     <item.icon className="w-5 h-5" />
                   </span>
                   {item.name}

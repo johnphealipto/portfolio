@@ -15,17 +15,17 @@ const Home = () => {
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
             John Adibe
           </h1>
-          <h2 className="text-lg sm:text-2xl animate-fade-in">
+          <h2 className="text-lg md:text-2xl animate-fade-in">
             Frontend Developer @ Product Studio
           </h2>
-          <p className="text-zinc-400 text-base sm:text-lg font-light max-w-lg animate-fade-in">
+          <p className="text-zinc-400 text-base md:text-lg font-light max-w-lg animate-fade-in">
             <span className="text-orange-strong">Building interfaces</span>. I
             create accessible web products and cross-platform solutions.{" "}
-            <em className="py-1 px-2 font-serif border text-base">
+            <em className="py-1 px-2 font-serif border text-base leading-9">
               Meticulously.
             </em>
           </p>
-          <div className="flex gap-5 mt-8">
+          <div className="flex gap-5 mt-5 md:mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
               <a
                 href={item.link}
