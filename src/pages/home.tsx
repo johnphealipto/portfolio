@@ -16,7 +16,7 @@ const Home = () => {
             John Adibe
           </h1>
           <h2 className="text-lg md:text-2xl animate-fade-in">
-            Frontend Developer @ Product Studio
+            Frontend [Web <code>&&</code> Mobile] Developer
           </h2>
           <p className="text-zinc-400 text-base md:text-lg font-light max-w-lg animate-fade-in">
             <span className="text-orange-strong">Building interfaces</span>. I
@@ -53,9 +53,9 @@ const Home = () => {
               </p>
               <p>
                 While I served as an educator, I was always puzzled about things
-                on the web. In 2020, I focused more on web programming, its
-                concepts, and practices. Fast-forward to today, I've had the
-                privilege of building accessible products for a business process{" "}
+                on the web, which led me to focus more on web programming, its
+                concepts, and practices, in 2020. Today, I've had the privilege
+                of building accessible products for a business process{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
                   text="outsourcing company"
@@ -142,7 +142,7 @@ const Home = () => {
           <div className="flex text-center items-center">
             <CustomButton
               text="Meeting with John"
-              href="https://calendly.com/john-adibe/15-minute-meeting"
+              href="https://cal.com/john-adibe/15min"
               icon="calendar"
             />
           </div>

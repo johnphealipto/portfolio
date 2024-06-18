@@ -25,6 +25,11 @@ import FigmaOutlinedIcon from "./figma-outlined.svg?react";
 import UserIcon from "./user.svg?react";
 import DashboardSquareIcon from "./dashboard-square.svg?react";
 import MailReplyIcon from "./mail-reply.svg?react";
+import PyCharmIcon from "./pycharm.svg?react";
+import PythonIcon from "./python.svg?react";
+
+// Icons Source:
+// https://devicon.dev/
 
 export {
   FileLinkIcon,
@@ -54,4 +59,6 @@ export {
   FigmaOutlinedIcon,
   DashboardSquareIcon,
   MailReplyIcon,
+  PyCharmIcon,
+  PythonIcon,
 };

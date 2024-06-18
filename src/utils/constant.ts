@@ -18,6 +18,8 @@ import {
   TwitterXIcon,
   TypescriptIcon,
   VscodeIcon,
+  PythonIcon,
+  PyCharmIcon,
 } from "@/assets/icons";
 import IslandLuxury from "@/assets/island-luxury.png";
 import Em2geeFoods from "@/assets/em2gee-foods.png";
@@ -108,6 +110,7 @@ export const TECH_STACKS_TOOLS = [
       { icon: SassIcon, name: "SASS" },
       { icon: TailwindIcon, name: "Tailwind CSS" },
       { icon: ThreeJSIcon, name: "Three.js" },
+      { icon: PythonIcon, name: "Python" },
       { icon: GraphqlIcon, name: "GraphQL" },
       { icon: GitIcon, name: "Git" },
       { icon: FirebaseIcon, name: "Firebase" },
@@ -120,6 +123,7 @@ export const TECH_STACKS_TOOLS = [
       { icon: FigmaIcon, name: "Figma" },
       { icon: BlenderIcon, name: "Blender" },
       { icon: AndroidStudioIcon, name: "Android Studio" },
+      { icon: PyCharmIcon, name: "PyCharm" },
     ],
   },
 ];
