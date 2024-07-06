@@ -23,7 +23,7 @@ import {
 } from "@/assets/icons";
 import IslandLuxury from "@/assets/island-luxury.png";
 import Em2geeFoods from "@/assets/em2gee-foods.png";
-import ResumeAndLetter from "@/assets/resume-and-letter.png";
+import GoPot from "@/assets/gopot.png";
 import ClientModule from "@/assets/client-module.png";
 
 export const SOCIAL_LINKS = [
@@ -46,9 +46,17 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS: ProjectCardProps[] = [
   {
+    name: "GoPot",
+    image: GoPot,
+    desc: "Built the frontend of GoPot, a web application designed to predict sport event outcomes against a group of people that participated in the challenge. This project integrates Livescore API, advanced search capabilities, and secure transactions.",
+    date: "June 25, 2024",
+    stacks: ["Next.js", "Typescript", "Tailwind CSS", "Redux ToolKit"],
+    live: "https://playgopot.com/",
+  },
+  {
     name: "Island Luxury Property Listings",
     image: IslandLuxury,
-    desc: "A web application with a variety of property listings with a dashboard for uploading properties. While it lasted, there was a 10% boost in sales. I designed and developed the website and its admin dashboard.",
+    desc: "A web application with a variety of property listings with a dashboard for uploading properties. While it lasted, there was a 20% boost in sales. I designed and developed the website and its admin dashboard.",
     date: "Feb 10, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux"],
     live: "https://island-luxury-demo.netlify.app/",
@@ -80,7 +88,7 @@ export const PROJECTS: ProjectCardProps[] = [
   },
   {
     name: "Résumé and Cover Letter template",
-    image: ResumeAndLetter,
+    // image: ResumeAndLetter,
     desc: "Developed a résumé and cover letter template with React-PDF (renderer). I chose to develop my template so I could have more control over the structure, content and aesthetics. I have used this template for several job applications and have landed three offers. Feel free to clone for personal use.",
     date: "Oct 31, 2023",
     stacks: ["React.js + Vite.js", "Typescript", "@react-pdf/renderer"],

@@ -16,7 +16,7 @@ const Home = () => {
             John Adibe
           </h1>
           <h2 className="text-lg md:text-2xl animate-fade-in">
-            Frontend [Web <code>&&</code> Mobile] Developer
+            Frontend Developer
           </h2>
           <p className="text-zinc-400 text-base md:text-lg font-light max-w-lg animate-fade-in">
             <span className="text-orange-strong">Building interfaces</span>. I
@@ -45,27 +45,23 @@ const Home = () => {
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 md:text-base">
               <p>
-                I'm a frontend developer who transitioned from a seasoned
-                mathematics teacher. After completing my B.Sc in Mathematics
-                Education, I began my career as a mathematics teacher in
-                secondary schools and this role continued for approximately two
-                years.
+                Hey there. I'm John, a frontend developer who transitioned from
+                a seasoned mathematics teacher. I've been in the industry since
+                2020, which was after my career as a mathematics educator in
+                secondary schools for approximately two years.
               </p>
               <p>
-                While I served as an educator, I was always puzzled about things
-                on the web, which led me to focus more on web programming, its
-                concepts, and practices, in 2020. Today, I've had the privilege
-                of building accessible products for a business process{" "}
+                I've had the privilege of working with companies in the likes of{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
-                  text="outsourcing company"
+                  text="Outcess LTD"
                   target="_blank"
                   withIcon
                 />
-                , a{" "}
+                ,{" "}
                 <CustomLink
                   href="https://www.myclinify.com/"
-                  text="healthcare agency"
+                  text="Clinify INC"
                   target="_blank"
                   withIcon
                 />
@@ -75,14 +71,14 @@ const Home = () => {
                   text="Product Studio HQ"
                   target="_blank"
                   withIcon
-                />
-                .
+                />{" "}
+                - contributing and building accessible products.
               </p>
               <p>
-                I'm also passionate about 3D web-based experiences. I enjoy
-                pushing the boundaries of the web, and I love country music.
-                Now, I'm focused on building interfaces while committed to
-                lifelong learning and self-improvement.
+                I learn every day by continuously pushing the boundaries of the
+                web, syncing with frontend technologies and trends, and then
+                getting feedback to further improve myself. I just enjoy country
+                music.
               </p>
             </div>
           </div>
