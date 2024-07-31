@@ -46,39 +46,47 @@ const Home = () => {
             <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 md:text-base">
               <p>
                 Hey there. I'm John, a frontend developer who transitioned from
-                a seasoned mathematics teacher. I've been in the industry since
-                2020, which was after my career as a mathematics educator in
-                secondary schools for approximately two years.
+                a seasoned mathematics teacher. I've been in the software
+                industry since 2020, which was after my career as a mathematics
+                educator in secondary schools.
               </p>
               <p>
-                I've had the privilege of working with companies in the likes of{" "}
+                My expertise lies in building interactive web and mobile
+                solutions. I've been privilege to work for an{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
-                  text="Outcess LTD"
+                  text="outsourcing company"
                   target="_blank"
                   withIcon
                 />
-                ,{" "}
+                , an{" "}
+                <CustomLink
+                  href="https://longbridgetech.com/"
+                  text="IT solutions company"
+                  target="_blank"
+                  withIcon
+                />
+                , and a{" "}
                 <CustomLink
                   href="https://www.myclinify.com/"
-                  text="Clinify INC"
+                  text="healthcare agency"
                   target="_blank"
                   withIcon
                 />
-                , and currently at{" "}
+                , and I'm currently building products for the customers at{" "}
                 <CustomLink
                   href="https://www.theproductstudiohq.com/"
                   text="Product Studio HQ"
                   target="_blank"
                   withIcon
-                />{" "}
-                - contributing and building accessible products.
+                />
+                .
               </p>
               <p>
                 I learn every day by continuously pushing the boundaries of the
-                web, syncing with frontend technologies and trends, and then
-                getting feedback to further improve myself. I just enjoy country
-                music.
+                web, syncing with frontend technologies and trends. Then I
+                always look forward to feedbacks which aid in further improving
+                myself. I enjoy country music.
               </p>
             </div>
           </div>
@@ -125,10 +133,10 @@ const Home = () => {
       </section>
       <section id="contact" className="container py-24 md:py-40">
         <div className="flex flex-col gap-7 items-center text-center mt-10">
-          <Title title="Let's Talk" align="center" ignore />
+          <Title title="Let's Connect" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
             If you want to discuss an opportunity with me or have any questions
-            or comments I would love to hear them. You can send an email to{" "}
+            or comments, I would be glad to hear them. You can send an email to{" "}
             <CustomLink
               text="johnadibe450@gmail.com"
               href="mailto:johnadibe450@gmail.com"
