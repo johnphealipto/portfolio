@@ -27,6 +27,8 @@ import DashboardSquareIcon from "./dashboard-square.svg?react";
 import MailReplyIcon from "./mail-reply.svg?react";
 import PyCharmIcon from "./pycharm.svg?react";
 import PythonIcon from "./python.svg?react";
+import LocationIcon from "./location.svg?react";
+import SupabaseIcon from "./supabase.svg?react";
 
 // Icons Source:
 // https://devicon.dev/
@@ -61,4 +63,6 @@ export {
   MailReplyIcon,
   PyCharmIcon,
   PythonIcon,
+  LocationIcon,
+  SupabaseIcon,
 };

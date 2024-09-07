@@ -3,7 +3,6 @@ import {
   BlenderIcon,
   ExpoIcon,
   FigmaIcon,
-  FirebaseIcon,
   GitIcon,
   GithubIcon,
   GraphqlIcon,
@@ -20,6 +19,7 @@ import {
   VscodeIcon,
   PythonIcon,
   PyCharmIcon,
+  SupabaseIcon,
 } from "@/assets/icons";
 import IslandLuxury from "@/assets/island-luxury.png";
 import Em2geeFoods from "@/assets/em2gee-foods.png";
@@ -125,9 +125,9 @@ export const TECH_STACKS_TOOLS = [
       { icon: TailwindIcon, name: "Tailwind CSS" },
       { icon: ThreeJSIcon, name: "Three.js" },
       { icon: PythonIcon, name: "Python" },
+      { icon: SupabaseIcon, name: "Supabase" },
       { icon: GraphqlIcon, name: "GraphQL" },
       { icon: GitIcon, name: "Git" },
-      { icon: FirebaseIcon, name: "Firebase" },
     ],
   },
   {

@@ -3,6 +3,7 @@ import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "@/utils/constant";
 import CustomButton from "@/components/button";
 import CustomLink from "@/components/link";
 import ProjectCard from "@/components/project-card";
+import { LocationIcon } from "@/assets/icons";
 
 const Home = () => {
   return (
@@ -15,8 +16,8 @@ const Home = () => {
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
             John Adibe
           </h1>
-          <h2 className="text-lg md:text-2xl animate-fade-in">
-            Frontend Developer
+          <h2 className="text-lg md:text-2xl animate-fade-in flex items-center gap-2">
+            Frontend Developer <LocationIcon /> <span>Lagos</span>
           </h2>
           <p className="text-zinc-400 text-base md:text-lg font-light max-w-lg animate-fade-in">
             <span className="text-orange-strong">Building interfaces</span>. I
@@ -47,8 +48,8 @@ const Home = () => {
               <p>
                 Hey there. I'm John, a frontend developer who transitioned from
                 a seasoned mathematics teacher. I've been in the software
-                industry since 2020, which was after my career as a mathematics
-                educator in secondary schools.
+                development industry since 2020, which was after my career as a
+                mathematics educator.
               </p>
               <p>
                 My expertise lies in building interactive web and mobile
@@ -73,7 +74,7 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />
-                , and I'm currently building products for the customers at{" "}
+                , and I'm currently building products for the clients at{" "}
                 <CustomLink
                   href="https://www.theproductstudiohq.com/"
                   text="Product Studio HQ"
@@ -83,11 +84,12 @@ const Home = () => {
                 .
               </p>
               <p>
-                I learn every day by continuously pushing the boundaries of the
-                web, syncing with frontend technologies and trends. Then I
+                I learn every day by continuously pushing the limits of my
+                knowledge, syncing with frontend technologies and trends. Then I
                 always look forward to feedbacks which aid in further improving
-                myself. I enjoy country music.
+                myself.
               </p>
+              <em className="font-serif">PS: I enjoy country music.</em>
             </div>
           </div>
           <div className="flex flex-col gap-8">
