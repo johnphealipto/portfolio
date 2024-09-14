@@ -3,7 +3,6 @@ import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "@/utils/constant";
 import CustomButton from "@/components/button";
 import CustomLink from "@/components/link";
 import ProjectCard from "@/components/project-card";
-import { LocationIcon } from "@/assets/icons";
 
 const Home = () => {
   return (
@@ -17,7 +16,7 @@ const Home = () => {
             John Adibe
           </h1>
           <h2 className="text-lg md:text-2xl animate-fade-in flex items-center gap-2">
-            Frontend Developer <LocationIcon /> <span>Lagos</span>
+            Frontend Developer
           </h2>
           <p className="text-zinc-400 text-base md:text-lg font-light max-w-lg animate-fade-in">
             <span className="text-orange-strong">Building interfaces</span>. I
@@ -89,7 +88,7 @@ const Home = () => {
                 always look forward to feedbacks which aid in further improving
                 myself.
               </p>
-              <em className="font-serif">PS: I enjoy country music.</em>
+              {/* <em className="font-serif">PS: I enjoy country music.</em> */}
             </div>
           </div>
           <div className="flex flex-col gap-8">
