@@ -19,10 +19,10 @@ const Home = () => {
             Frontend Developer
           </h2>
           <p className="text-zinc-400 text-base md:text-lg font-light max-w-lg animate-fade-in">
-            <span className="text-orange-strong">Building interfaces</span>. I
-            create accessible web products and cross-platform solutions.{" "}
+            <span className="text-orange-strong">Building interfaces</span>.
+            Transforming designs and ideas into interactive products.{" "}
             <em className="py-1 px-2 font-serif border text-base leading-9">
-              Meticulously.
+              Meticulously
             </em>
           </p>
           <div className="flex gap-5 mt-5 md:mt-8">
@@ -46,13 +46,14 @@ const Home = () => {
             <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 md:text-base">
               <p>
                 Hey there. I'm John, a frontend developer who transitioned from
-                a seasoned mathematics teacher. I've been in the software
-                development industry since 2020, which was after my career as a
-                mathematics educator.
+                a seasoned mathematics educator. I started learning software
+                development in 2020, which was during a career break from
+                mathematics education. So far, I've learnt to craft intuitive
+                and user-friendly solutions.
               </p>
               <p>
                 My expertise lies in building interactive web and mobile
-                solutions. I've been privilege to work for an{" "}
+                products, I've been privileged to work for an{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
                   text="outsourcing company"
@@ -84,11 +85,10 @@ const Home = () => {
               </p>
               <p>
                 I learn every day by continuously pushing the limits of my
-                knowledge, syncing with frontend technologies and trends. Then I
-                always look forward to feedbacks which aid in further improving
-                myself.
+                knowledge, syncing with frontend technologies and trends, and
+                then always looking forward to feedback as to further improve my
+                craft.
               </p>
-              {/* <em className="font-serif">PS: I enjoy country music.</em> */}
             </div>
           </div>
           <div className="flex flex-col gap-8">
@@ -133,16 +133,17 @@ const Home = () => {
         </div>
       </section>
       <section id="contact" className="container py-24 md:py-40">
-        <div className="flex flex-col gap-7 items-center text-center mt-10">
-          <Title title="Let's Connect" align="center" ignore />
-          <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
-            If you want to discuss an opportunity with me or have any questions
-            or comments, I would be glad to hear them. You can send an email to{" "}
-            <CustomLink
-              text="johnadibe450@gmail.com"
-              href="mailto:johnadibe450@gmail.com"
-            />
-          </p>
+        <div className="flex flex-col gap-4 items-center text-center mt-10">
+          <div className="space-y-1">
+            <Title title="Let's Talk" align="center" ignore />
+            <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
+              I'm always happy to discuss new opportunities. <br />
+              <CustomLink
+                text="johnadibe450@gmail.com"
+                href="mailto:johnadibe450@gmail.com"
+              />
+            </p>
+          </div>
           <p>OR</p>
           <div className="flex text-center items-center">
             <CustomButton

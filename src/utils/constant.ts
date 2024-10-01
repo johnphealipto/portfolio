@@ -86,7 +86,7 @@ export const PROJECTS: ProjectCardProps[] = [
   },
   {
     name: "Résumé and Cover Letter template",
-    desc: "A résumé and cover letter template with React-PDF (renderer). I chose to develop my template so I could have more control over the structure, content and aesthetics. I have used this template for several job applications and have landed three offers. Feel free to clone for personal use.",
+    desc: "A résumé and cover letter template with React-PDF (renderer). I chose to develop a custom template so I could have more control over the structure and aesthetics.",
     date: "Oct 31, 2023",
     stacks: ["Vite.js + React.js", "Typescript", "@react-pdf/renderer"],
     code: "https://github.com/johnphealipto/resume-and-letter",
@@ -103,7 +103,7 @@ export const PROJECTS: ProjectCardProps[] = [
   {
     name: "Em2gee Foods",
     image: Em2geeFoods,
-    desc: "A branded website for a food industry that processes and produces bean flour. This project was a charity work for the industry and also my first attempt at building a full-blown static website.",
+    desc: "A branded website for a food industry that processes and produces bean flour. I developed it as a voluntary work and also my first attempt at building a full-blown static website.",
     date: "Dec 27, 2020",
     stacks: ["jQuery", "Javascript", "HTML", "CSS"],
     live: "https://johnphealipto.github.io/em2gee-foods/",
