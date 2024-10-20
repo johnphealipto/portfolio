@@ -32,13 +32,13 @@ const ProjectCard = (props: ProjectCardProps) => {
         {props.name}
       </h3>
       <p className="text-zinc-500 text-sm sm:text-base">{props.desc}</p>
-      <div className="flex flex-wrap gap-x-2 gap-y-1">
-        <span className="text-zinc-50 font-semibold text-sm sm:text-base">
-          Stack/Tools:
-        </span>
+      <div className="flex flex-wrap gap-2">
         {props.stacks.map((stack, idx) => (
-          <span key={idx} className="text-zinc-500 text-sm sm:text-base">
-            {`${stack}${idx !== props.stacks.length - 1 ? ", " : "."}`}
+          <span
+            key={idx}
+            className="text-sm bg-orange-strong/10 px-2 py-1 text-orange-strong"
+          >
+            {stack}
           </span>
         ))}
       </div>
