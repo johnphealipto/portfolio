@@ -12,7 +12,7 @@ const IconLink = ({ href, icon: Icon }) => (
 
 const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <div className="flex flex-col gap-4 p-3 md:p-6 border">
+    <div className="group flex flex-col gap-4 p-3 md:p-6 border hover:bg-zinc-500/5 transition-colors">
       <div className="flex justify-between items-center text-zinc-400">
         <span className="text-sm">{props.date}</span>
         <div className="flex gap-4 items-center">
@@ -26,19 +26,23 @@ const ProjectCard = (props: ProjectCardProps) => {
         </div>
       </div>
       {props.image ? (
-        <img src={props.image} alt={props.name} className="w-full" />
+        <img
+          src={props.image}
+          alt={props.name}
+          className="w-full opacity-80 group-hover:opacity-90 transition-opacity"
+        />
       ) : null}
       <h3 className="text-zinc-50 font-bold text-xl sm:text-2xl">
         {props.name}
       </h3>
       <p className="text-zinc-500 text-sm sm:text-base">{props.desc}</p>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-x-2 gap-y-1">
+        <span className="text-zinc-50 font-semibold text-sm sm:text-base">
+          Stack:
+        </span>
         {props.stacks.map((stack, idx) => (
-          <span
-            key={idx}
-            className="text-sm bg-orange-strong/10 px-2 py-1 text-orange-strong"
-          >
-            {stack}
+          <span key={idx} className="text-zinc-500 text-sm sm:text-base">
+            {`${stack}${idx !== props.stacks.length - 1 ? ", " : "."}`}
           </span>
         ))}
       </div>

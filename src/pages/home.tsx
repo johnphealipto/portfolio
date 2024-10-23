@@ -45,49 +45,41 @@ const Home = () => {
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 md:text-base">
               <p>
-                Hey there. I'm John, a frontend developer who transitioned from
-                a seasoned mathematics educator. I started learning software
-                development in 2020, which was during a career break from
-                mathematics education. So far, I've learnt to craft intuitive
-                and user-friendly solutions.
+                I am a frontend developer who transitioned from a career as a
+                mathematics educator. I started learning software development in
+                2020 during a career break, and since then, I{" "}
+                <em className="font-serif">actively commit</em> to crafting
+                quality and maintainable solutions.
               </p>
               <p>
                 My expertise lies in building interactive web and mobile
-                products, I've been privileged to work for an{" "}
+                products, I've had the privilege of working for an{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
                   text="outsourcing company"
                   target="_blank"
-                  withIcon
-                />
-                , an{" "}
-                <CustomLink
-                  href="https://longbridgetech.com/"
-                  text="IT solutions company"
-                  target="_blank"
-                  withIcon
                 />
                 , and a{" "}
                 <CustomLink
                   href="https://www.myclinify.com/"
                   text="healthcare agency"
                   target="_blank"
-                  withIcon
                 />
-                , and I'm currently building products for the clients at{" "}
+                . Currently, I am building products for the clients at{" "}
                 <CustomLink
                   href="https://www.theproductstudiohq.com/"
                   text="Product Studio HQ"
                   target="_blank"
-                  withIcon
                 />
                 .
               </p>
               <p>
-                I learn every day by continuously pushing the limits of my
-                knowledge, syncing with frontend technologies and trends, and
-                then always looking forward to feedback as to further improve my
-                craft.
+                I believe in the power of{" "}
+                <em className="font-serif">quality</em> and{" "}
+                <em className="font-serif">refined</em> work. Refined work goes
+                beyond just the surface. Everyday, I strive to create impactful,
+                long-lasting results through thoughtful attention to details and
+                continuous improvement.
               </p>
             </div>
           </div>
@@ -119,7 +111,10 @@ const Home = () => {
             These are some of the projects I've worked on.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-4 md:mt-8">
+        <div
+          id="projects-wrapper"
+          className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-4 md:mt-8"
+        >
           <div className="flex flex-col gap-5 md:gap-8">
             {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
               <ProjectCard key={idx} {...project} />

@@ -29,6 +29,7 @@ import PyCharmIcon from "./pycharm.svg?react";
 import PythonIcon from "./python.svg?react";
 import LocationIcon from "./location.svg?react";
 import SupabaseIcon from "./supabase.svg?react";
+import XcodeIcon from "./xcode.svg?react";
 
 // Icons Source:
 // https://devicon.dev/
@@ -65,4 +66,5 @@ export {
   PythonIcon,
   LocationIcon,
   SupabaseIcon,
+  XcodeIcon,
 };

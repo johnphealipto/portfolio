@@ -15,7 +15,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({
   text,
   href,
   target,
-  withIcon,
+  withIcon = true,
 }) => {
   return (
     <a href={href} className="link whitespace-nowrap" target={target}>
