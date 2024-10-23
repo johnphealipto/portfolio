@@ -8,21 +8,13 @@ interface CustomLinkProps {
   href: string;
   icon?: Icons;
   target?: HTMLAttributeAnchorTarget;
-  withIcon?: boolean;
 }
 
-const CustomLink: React.FC<CustomLinkProps> = ({
-  text,
-  href,
-  target,
-  withIcon = true,
-}) => {
+const CustomLink: React.FC<CustomLinkProps> = ({ text, href, target }) => {
   return (
     <a href={href} className="link whitespace-nowrap" target={target}>
       <span>{text}</span>
-      {withIcon ? (
-        <LinkSquareIcon className="ml-1 inline" width={15} height={15} />
-      ) : null}
+      <LinkSquareIcon className="ml-1 inline" width={15} height={15} />
     </a>
   );
 };
