@@ -1,12 +1,13 @@
 import classNames from "classnames";
 
-type IInput = React.InputHTMLAttributes<HTMLInputElement>;
+type ITextarea = React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
-const Input = (props: IInput) => {
+const Textarea = (props: ITextarea) => {
   return (
     <div>
-      <input
+      <textarea
         {...props}
+        rows={4}
         className={classNames(
           "w-full bg-transparent px-4 py-3 text-zinc-50 text-base",
           "focus:outline-none border placeholder:text-zinc-500"
@@ -16,4 +17,4 @@ const Input = (props: IInput) => {
   );
 };
 
-export default Input;
+export default Textarea;

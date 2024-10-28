@@ -1,0 +1,52 @@
+@use "lenis";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    @apply text-dark bg-orange-strong;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #71717a;
+  }
+
+  body {
+    @apply text-white bg-dark text-sm;
+  }
+}
+
+@layer components {
+  .link > span {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 0.5px;
+  }
+}
+
+@layer utilities {
+  .container {
+    $root-padding: 20px;
+    width: 100%;
+    max-width: calc(1240px + $root-padding * 2);
+    margin: 0 auto;
+    padding-left: $root-padding;
+    padding-right: $root-padding;
+  }
+}

@@ -1,35 +1,39 @@
+"use client";
+
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="border-t text-zinc-500">
       <div className="container flex justify-between md:flex-row flex-col gap-4 items-center py-8">
         <p className="text-center">
           Built with{" "}
-          <a
+          <Link
             href="https://vitejs.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-300 hover:text-orange-strong transition duration-300"
           >
             Vite.js
-          </a>{" "}
+          </Link>{" "}
           and{" "}
-          <a
+          <Link
             href="https://tailwindcss.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-300 hover:text-orange-strong transition duration-300"
           >
             Tailwind CSS
-          </a>
+          </Link>
           , deployed with{" "}
-          <a
+          <Link
             href="https://vercel.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-300 hover:text-orange-strong transition duration-300"
           >
             Vercel
-          </a>
+          </Link>
           .
         </p>
         <span className="text-center">

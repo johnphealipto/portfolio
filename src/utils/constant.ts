@@ -16,11 +16,11 @@ import {
   TypescriptIcon,
   VscodeIcon,
   SupabaseIcon,
-} from "@/assets/icons";
-import IslandLuxury from "@/assets/island-luxury.png";
-import Em2geeFoods from "@/assets/em2gee-foods.png";
-// import GoPot from "@/assets/gopot.png";
-import ClientModule from "@/assets/client-module.png";
+} from "@/utils/icons";
+// import IslandLuxury from "@/utils/island-luxury.png";
+// import Em2geeFoods from "@/utils/em2gee-foods.png";
+// import GoPot from "@/utils/gopot.png";
+// import ClientModule from "@/utils/client-module.png";
 
 export const SOCIAL_LINKS = [
   {
@@ -72,7 +72,7 @@ export const PROJECTS: ProjectCardProps[] = [
   },
   {
     name: "Island Luxury Property Listings",
-    image: IslandLuxury,
+    // image: IslandLuxury,
     desc: "Web app with a variety of property listings for lease, rent and sale. With an admin dashboard for uploading properties and managing records. Designed and developed by yours truly.",
     date: "Feb 10, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux"],
@@ -89,7 +89,7 @@ export const PROJECTS: ProjectCardProps[] = [
   },
   {
     name: "Client Module",
-    image: ClientModule,
+    // image: ClientModule,
     desc: "A Client's Loan Report dashboard.",
     date: "Dec 18, 2021",
     stacks: ["React.js", "Javascript", "CSS", "Chart.js"],
@@ -98,7 +98,7 @@ export const PROJECTS: ProjectCardProps[] = [
   },
   {
     name: "Em2gee Foods",
-    image: Em2geeFoods,
+    // image: Em2geeFoods,
     desc: "A branded website for a food industry that processes and produces bean flour. I developed it as a voluntary work and also my first attempt at building a full-blown static website.",
     date: "Dec 27, 2020",
     stacks: ["jQuery", "Javascript", "HTML", "CSS"],

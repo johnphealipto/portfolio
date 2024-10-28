@@ -1,11 +1,9 @@
-@import "@/assets/styles/variables";
-
 header {
   nav a.active {
     position: relative;
     color: white !important;
     span {
-      color: $strong-orange;
+      @apply text-orange-strong;
     }
   }
 
@@ -44,10 +42,10 @@ header {
 @media only screen and (max-width: 768px) {
   header {
     nav {
+      @apply bg-dark;
       position: fixed;
       inset: 0;
       left: 0;
-      background-color: $dark;
       display: flex;
       flex-direction: column;
       justify-content: center;

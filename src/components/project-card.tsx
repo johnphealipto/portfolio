@@ -1,13 +1,15 @@
-import { FigmaOutlinedIcon, GithubIcon, LinkSquareIcon } from "@/assets/icons";
+import { FigmaOutlinedIcon, GithubIcon, LinkSquareIcon } from "@/utils/icons";
+import Link from "next/link";
 
-const IconLink = ({ href, icon: Icon }) => (
-  <a
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const IconLink = ({ href, icon: Icon }: { href: string; icon: any }) => (
+  <Link
     href={href}
     className="hover:text-orange-strong transition duration-300"
     target="_blank"
   >
     <Icon width={22} height={22} />
-  </a>
+  </Link>
 );
 
 const ProjectCard = (props: ProjectCardProps) => {
@@ -25,13 +27,13 @@ const ProjectCard = (props: ProjectCardProps) => {
           ) : null}
         </div>
       </div>
-      {props.image ? (
+      {/* {props.image ? (
         <img
           src={props.image}
           alt={props.name}
           className="w-full opacity-80 group-hover:opacity-90 transition-opacity"
         />
-      ) : null}
+      ) : null} */}
       <h3 className="text-zinc-50 font-bold text-xl sm:text-2xl">
         {props.name}
       </h3>

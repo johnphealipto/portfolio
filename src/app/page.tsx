@@ -1,12 +1,14 @@
-import Title from "@/components/title";
-import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "@/utils/constant";
 import CustomButton from "@/components/button";
 import CustomLink from "@/components/link";
 import ProjectCard from "@/components/project-card";
+import Title from "@/components/title";
+import ContactForm from "@/features/contact/contact-form";
+import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "@/utils/constant";
+import Link from "next/link";
 
-const Home = () => {
+export default function Home() {
   return (
-    <>
+    <div>
       <section
         id="hero"
         className="container flex pt-40 min-h-fit md:min-h-[60vh]"
@@ -27,14 +29,14 @@ const Home = () => {
           </p>
           <div className="flex gap-5 mt-5 md:mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
-              <a
+              <Link
                 href={item.link}
                 key={idx}
                 className="text-zinc-400 transition duration-300 hover:text-orange-strong"
                 target="_blank"
               >
                 <item.icon width={25} height={25} />
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -53,7 +55,7 @@ const Home = () => {
               </p>
               <p>
                 My expertise lies in building interactive web and mobile
-                products, I've had the privilege of working for an{" "}
+                products, I&apos;ve had the privilege of working for an{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
                   text="outsourcing company"
@@ -108,7 +110,7 @@ const Home = () => {
         <div className="max-w-2xl">
           <Title title="Projects" />
           <p className="text-zinc-500 text-base md:text-lg mt-2">
-            These are some of the projects I've worked on.
+            These are some of the projects I&apos;ve worked on.
           </p>
         </div>
         <div
@@ -128,29 +130,24 @@ const Home = () => {
         </div>
       </section>
       <section id="contact" className="container py-24 md:py-40">
-        <div className="flex flex-col gap-4 items-center text-center mt-10">
+        <div className="flex flex-col gap-4 items-center text-center max-w-md mx-auto mt-10">
           <div className="space-y-1">
             <Title title="Let's Talk" align="center" ignore />
             <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
-              I'm always happy to discuss new opportunities. <br />
-              <CustomLink
-                text="johnadibe450@gmail.com"
-                href="mailto:johnadibe450@gmail.com"
-              />
+              I&apos;m always happy to discuss new opportunities. <br />
             </p>
           </div>
+          <ContactForm />
           <p>OR</p>
-          <div className="flex text-center items-center">
-            <CustomButton
-              text="Meeting with John"
-              href="https://cal.com/john-adibe/15min"
-              icon="calendar"
-            />
-          </div>
+          <CustomButton
+            text="Meeting with John"
+            href="https://cal.com/john-adibe/15min"
+            size="md"
+            fullWidth
+            variant="primary-outline"
+          />
         </div>
       </section>
-    </>
+    </div>
   );
-};
-
-export default Home;
+}

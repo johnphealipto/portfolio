@@ -1,11 +1,10 @@
 import classNames from "classnames";
-import Logo from "@/assets/icons/brand.svg?react";
+import Logo from "~/icons/brand.svg";
 import CustomButton from "@/components/button";
 import useTopNavigation from "./hooks/useTopNavigation";
-import { DashboardSquareIcon, MailReplyIcon, UserIcon } from "@/assets/icons";
+import { DashboardSquareIcon, MailReplyIcon, UserIcon } from "@/utils/icons";
 import { SOCIAL_LINKS } from "@/utils/constant";
-
-import "@/assets/styles/nav.scss";
+import Link from "next/link";
 
 const NAV_ITEMS = [
   { path: "#about", name: "About", icon: UserIcon },
@@ -23,9 +22,9 @@ const TopNavigation = () => {
     >
       <div className="container relative bg-dark">
         <div className="flex items-center justify-between h-16 border px-5">
-          <a href="/" className="text-zinc-50 z-50">
-            <Logo width={50} height={30} />
-          </a>
+          <Link href="/" className="text-zinc-50 z-50">
+            <Logo height={40} width={40} />
+          </Link>
           <div className="flex items-center gap-8">
             <nav
               className={classNames("flex", {
@@ -33,7 +32,7 @@ const TopNavigation = () => {
               })}
             >
               {NAV_ITEMS.map((item, idx) => (
-                <a
+                <Link
                   key={idx}
                   href={item.path}
                   className={classNames(
@@ -42,14 +41,14 @@ const TopNavigation = () => {
                   )}
                   onClick={() => {
                     setMenu(false);
-                    lenis.scrollTo(item.path);
+                    lenis!.scrollTo(item.path);
                   }}
                 >
                   <span className="transition-all duration-500 border md:border-none p-2 md:p-0">
-                    <item.icon className="w-5 h-5" />
+                    <item.icon width={20} height={20} />
                   </span>
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="block md:hidden mt-4">
                 <CustomButton
@@ -59,14 +58,14 @@ const TopNavigation = () => {
                 />
                 <div className="mt-8 flex gap-4 justify-center">
                   {SOCIAL_LINKS.map((item, idx) => (
-                    <a
+                    <Link
                       href={item.link}
                       key={idx}
                       className="text-zinc-500 p-2"
                       target="_blank"
                     >
-                      <item.icon className="w-6 h-6" />
-                    </a>
+                      <item.icon width={24} height={24} />
+                    </Link>
                   ))}
                 </div>
               </div>
