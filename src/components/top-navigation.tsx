@@ -1,10 +1,10 @@
 import classNames from "classnames";
 import Logo from "~/icons/brand.svg";
 import CustomButton from "@/components/button";
-import useTopNavigation from "./hooks/useTopNavigation";
 import { DashboardSquareIcon, MailReplyIcon, UserIcon } from "@/utils/icons";
 import { SOCIAL_LINKS } from "@/utils/constant";
 import Link from "next/link";
+import useTopNavigation from "@/hooks/useTopNavigation";
 
 const NAV_ITEMS = [
   { path: "#about", name: "About", icon: UserIcon },
@@ -23,7 +23,7 @@ const TopNavigation = () => {
       <div className="container relative bg-dark">
         <div className="flex items-center justify-between h-16 border px-5">
           <Link href="/" className="text-zinc-50 z-50">
-            <Logo height={40} width={40} />
+            <Logo height={50} width={50} />
           </Link>
           <div className="flex items-center gap-8">
             <nav

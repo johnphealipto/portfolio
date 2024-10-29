@@ -75,7 +75,7 @@ export default function Home() {
                 />
                 .
               </p>
-              <p>
+              <p className="border-l-4 pl-3 sm:pl-4">
                 I believe in the power of{" "}
                 <em className="font-serif">quality</em> and{" "}
                 <em className="font-serif">refined</em> work. Refined work goes
@@ -134,7 +134,7 @@ export default function Home() {
           <div className="space-y-1">
             <Title title="Let's Talk" align="center" ignore />
             <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
-              I&apos;m always happy to discuss new opportunities. <br />
+              I&apos;m always happy to discuss new ideas.
             </p>
           </div>
           <ContactForm />

@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   webpack(config) {
     // Grab the existing rule that handles SVG imports
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg")
@@ -25,7 +26,6 @@ const nextConfig: NextConfig = {
         test: /\.svg$/i,
         issuer: fileLoaderRule.issuer,
         resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
-        // resourceQuery: { not: /url/ }, // exclude if *.svg?url
         use: [{ loader: "@svgr/webpack", options: { icon: true } }],
       }
     );
