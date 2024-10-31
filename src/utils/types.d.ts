@@ -1,6 +1,6 @@
 type ProjectCardProps = {
   name: string;
-  image?: string;
+  image?: StaticImageData;
   desc: string;
   date: string;
   stacks: string[];

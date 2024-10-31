@@ -1,4 +1,5 @@
 import { FigmaOutlinedIcon, GithubIcon, LinkSquareIcon } from "@/utils/icons";
+import Image from "next/image";
 import Link from "next/link";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -27,13 +28,17 @@ const ProjectCard = (props: ProjectCardProps) => {
           ) : null}
         </div>
       </div>
-      {/* {props.image ? (
-        <img
-          src={props.image}
-          alt={props.name}
-          className="w-full opacity-80 group-hover:opacity-90 transition-opacity"
-        />
-      ) : null} */}
+      {props.image ? (
+        <div className="relative w-full">
+          <Image
+            src={props.image}
+            alt={props.name}
+            width={1000}
+            height={500}
+            className="w-full opacity-80 group-hover:opacity-90 transition-opacity object-cover"
+          />
+        </div>
+      ) : null}
       <h3 className="text-zinc-50 font-bold text-xl sm:text-2xl">
         {props.name}
       </h3>

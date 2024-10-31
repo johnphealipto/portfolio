@@ -1,6 +1,6 @@
 import CustomButton from "@/components/button";
 import CustomLink from "@/components/link";
-import ProjectCard from "@/components/project-card";
+import ProjectCard from "@/features/projects/project-card";
 import Title from "@/components/title";
 import ContactForm from "@/features/contact/contact-form";
 import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "@/utils/constant";
@@ -75,7 +75,7 @@ export default function Home() {
                 />
                 .
               </p>
-              <p className="border-l-4 pl-3 sm:pl-4">
+              <p>
                 I believe in the power of{" "}
                 <em className="font-serif">quality</em> and{" "}
                 <em className="font-serif">refined</em> work. Refined work goes
