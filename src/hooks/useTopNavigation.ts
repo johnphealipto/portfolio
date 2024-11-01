@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLenis } from "@studio-freight/react-lenis";
 
-export default () => {
+const useTopNavigation = () => {
   const lenis = useLenis();
   const margin = "20px";
 
@@ -43,3 +43,5 @@ export default () => {
 
   return { menu, top, setMenu, lenis };
 };
+
+export default useTopNavigation;

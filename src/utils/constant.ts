@@ -3,28 +3,23 @@ import {
   BlenderIcon,
   ExpoIcon,
   FigmaIcon,
-  GitIcon,
   GithubIcon,
   GraphqlIcon,
-  JavascriptIcon,
   LinkedinIcon,
   NextJSIcon,
   ReactIcon,
   ReduxIcon,
-  SassIcon,
+  XcodeIcon,
   TailwindIcon,
   ThreeJSIcon,
   TwitterXIcon,
   TypescriptIcon,
   VscodeIcon,
-  PythonIcon,
-  PyCharmIcon,
   SupabaseIcon,
-} from "@/assets/icons";
-import IslandLuxury from "@/assets/island-luxury.png";
-import Em2geeFoods from "@/assets/em2gee-foods.png";
-// import GoPot from "@/assets/gopot.png";
-import ClientModule from "@/assets/client-module.png";
+} from "@/utils/icons";
+import IslandLuxury from "~/images/island-luxury.png";
+import Em2geeFoods from "~/images/em2gee-foods.png";
+import ClientModule from "~/images/client-module.png";
 
 export const SOCIAL_LINKS = [
   {
@@ -116,18 +111,18 @@ export const TECH_STACKS_TOOLS = [
     title: "Technologies",
     collections: [
       { icon: TypescriptIcon, name: "Typescript" },
-      { icon: JavascriptIcon, name: "Javascript" },
+      // { icon: JavascriptIcon, name: "Javascript" },
       { icon: ReactIcon, name: "React.js" },
       { icon: NextJSIcon, name: "Next.js" },
       { icon: ReduxIcon, name: "Redux" },
       { icon: ExpoIcon, name: "React Native (Expo)" },
-      { icon: SassIcon, name: "SASS" },
+      // { icon: SassIcon, name: "SASS" },
       { icon: TailwindIcon, name: "Tailwind CSS" },
       { icon: ThreeJSIcon, name: "Three.js" },
-      { icon: PythonIcon, name: "Python" },
+      // { icon: PythonIcon, name: "Python" },
       { icon: SupabaseIcon, name: "Supabase" },
       { icon: GraphqlIcon, name: "GraphQL" },
-      { icon: GitIcon, name: "Git" },
+      // { icon: GitIcon, name: "Git" },
     ],
   },
   {
@@ -137,7 +132,8 @@ export const TECH_STACKS_TOOLS = [
       { icon: FigmaIcon, name: "Figma" },
       { icon: BlenderIcon, name: "Blender" },
       { icon: AndroidStudioIcon, name: "Android Studio" },
-      { icon: PyCharmIcon, name: "PyCharm" },
+      { icon: XcodeIcon, name: "Xcode" },
+      // { icon: PyCharmIcon, name: "PyCharm" },
     ],
   },
 ];
