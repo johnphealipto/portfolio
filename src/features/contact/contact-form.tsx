@@ -2,13 +2,16 @@
 
 import CustomButton from "@/components/button";
 import Input from "@/components/input";
+import Modal from "@/components/modal";
 import Textarea from "@/components/textarea";
 import { FormEvent, useState } from "react";
 
-const ContactForm = () => {
-  const [isLoading, setIsLoading] = useState(false);
+const initialState = { name: "", email: "", message: "" };
 
-  const [inputs, setInputs] = useState({ name: "", email: "", message: "" });
+const ContactForm = () => {
+  const [modal, setModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [inputs, setInputs] = useState(initialState);
 
   const handleChangeInput = (input: keyof typeof inputs, value: string) => {
     setInputs((prev) => ({ ...prev, [input]: value }));
@@ -21,11 +24,13 @@ const ContactForm = () => {
     await fetch("/api/emails", {
       method: "POST",
       body: JSON.stringify({
-        from: `${inputs.name} <${inputs.email}>`,
-        message: inputs.message,
+        ...inputs,
       }),
     })
-      .then((res) => console.log("email-res", res))
+      .then(() => {
+        setModal(true);
+        setInputs(initialState);
+      })
       .finally(() => setIsLoading(false));
   };
 
@@ -60,6 +65,22 @@ const ContactForm = () => {
         isLoading={isLoading}
         text={isLoading ? "Sending..." : "Send"}
       />
+
+      <Modal isOpen={modal}>
+        <div className="space-y-8">
+          <h2 className="text-2xl font-serif italic">Thank you</h2>
+          <p className="bg-zinc-500/5 p-4 text-base">
+            Your message has been received and I&apos;ll get back to you as soon
+            as possible.
+          </p>
+          <CustomButton
+            size="md"
+            fullWidth
+            text="Close"
+            onClick={() => setModal(false)}
+          />
+        </div>
+      </Modal>
     </form>
   );
 };

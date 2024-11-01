@@ -8,7 +8,7 @@ import "@/styles/nav.scss";
 export const metadata: Metadata = {
   title: "John Adibe",
   description:
-    "Frontend developer specializing in developing accessible web products.",
+    "Frontend developer specializing in developing quality web and mobile products.",
   icons: {
     icon: "/logo.svg",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     site: "@johnphealipto",
     title: "John Adibe",
     description:
-      "Frontend developer specializing in developing accessible web products.",
+      "Frontend developer specializing in developing quality web and mobile products.",
     images: ["https://johnadibe.vercel.app/og.png"],
   },
 };

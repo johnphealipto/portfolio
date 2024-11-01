@@ -54,8 +54,8 @@ export default function Home() {
                 quality and maintainable solutions.
               </p>
               <p>
-                My expertise lies in building interactive web and mobile
-                products, I&apos;ve had the privilege of working for an{" "}
+                My expertise lies in building quality web and mobile products,
+                I&apos;ve had the privilege of working for an{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
                   text="outsourcing company"
