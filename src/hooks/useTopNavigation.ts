@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLenis } from "@studio-freight/react-lenis";
+import { useLenis } from "lenis/react";
 
 const useTopNavigation = () => {
   const lenis = useLenis();
