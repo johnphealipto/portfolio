@@ -17,9 +17,10 @@ import {
   VscodeIcon,
   SupabaseIcon,
 } from "@/utils/icons";
-import IslandLuxury from "~/images/island-luxury.png";
-import Em2geeFoods from "~/images/em2gee-foods.png";
-import ClientModule from "~/images/client-module.png";
+// import IslandLuxury from "~/images/island-luxury.png";
+// import Em2geeFoods from "~/images/em2gee-foods.png";
+// import ClientModule from "~/images/client-module.png";
+import ClinifyImage from "~/images/clinify-redesign.png";
 
 export const SOCIAL_LINKS = [
   {
@@ -49,6 +50,14 @@ export const PROJECTS: ProjectCardProps[] = [
   //   live: "https://playgopot.com/",
   // },
   {
+    name: "Clinify INC Redesign",
+    image: ClinifyImage,
+    desc: "I spearheaded a complete redesign and development for an EMR company, focusing on clean UI, accessibility and performance, and to better showcase Clinify's healthcare solutions.",
+    date: "Mar 30, 2025",
+    stacks: ["Next.js", "Typescript", "Tailwind CSS", "Framer Motion"],
+    live: "https://clinify-redesign.vercel.app/",
+  },
+  {
     name: "React Native UI Tips",
     desc: "A collection of unique mobile design components. Building with react native.",
     date: "Jun 15, 2024",
@@ -71,7 +80,7 @@ export const PROJECTS: ProjectCardProps[] = [
   },
   {
     name: "Island Luxury Property Listings",
-    image: IslandLuxury,
+    // image: IslandLuxury,
     desc: "Web app with a variety of property listings for lease, rent and sale. With an admin dashboard for uploading properties and managing records. Designed and developed by yours truly.",
     date: "Feb 10, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux"],
@@ -79,25 +88,25 @@ export const PROJECTS: ProjectCardProps[] = [
     figma:
       "https://www.figma.com/file/oNGu5qBAb4nsXegrFb0rcF/Island-Luxury?type=design&node-id=0%3A1&mode=design&t=7WflUGt9N3PD7N8f-1",
   },
-  {
-    name: "Résumé and Cover Letter template",
-    desc: "A résumé and cover letter template with React-PDF (renderer). I chose to develop a custom template so I could have more control over the structure and aesthetics.",
-    date: "Oct 31, 2023",
-    stacks: ["Vite.js + React.js", "Typescript", "@react-pdf/renderer"],
-    code: "https://github.com/johnphealipto/resume-and-letter",
-  },
-  {
-    name: "Client Module",
-    image: ClientModule,
-    desc: "A Client's Loan Report dashboard.",
-    date: "Dec 18, 2021",
-    stacks: ["React.js", "Javascript", "CSS", "Chart.js"],
-    code: "https://github.com/johnphealipto/client-module",
-    live: "https://client-module.netlify.app/",
-  },
+  // {
+  //   name: "Résumé and Cover Letter template",
+  //   desc: "A résumé and cover letter template with React-PDF (renderer). I chose to develop a custom template so I could have more control over the structure and aesthetics.",
+  //   date: "Oct 31, 2023",
+  //   stacks: ["Vite.js + React.js", "Typescript", "@react-pdf/renderer"],
+  //   code: "https://github.com/johnphealipto/resume-and-letter",
+  // },
+  // {
+  //   name: "Client Module",
+  //   // image: ClientModule,
+  //   desc: "A Client's Loan Report dashboard.",
+  //   date: "Dec 18, 2021",
+  //   stacks: ["React.js", "Javascript", "CSS", "Chart.js"],
+  //   code: "https://github.com/johnphealipto/client-module",
+  //   live: "https://client-module.netlify.app/",
+  // },
   {
     name: "Em2gee Foods",
-    image: Em2geeFoods,
+    // image: Em2geeFoods,
     desc: "A branded website for a food industry that processes and produces bean flour. I developed it as a voluntary work and also my first attempt at building a full-blown static website.",
     date: "Dec 27, 2020",
     stacks: ["jQuery", "Javascript", "HTML", "CSS"],

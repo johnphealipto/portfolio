@@ -6,7 +6,7 @@ import "@/styles/global.scss";
 import "@/styles/nav.scss";
 
 export const metadata: Metadata = {
-  title: "John Adibe",
+  title: "JOHN ▲",
   description:
     "Frontend developer specializing in developing quality web and mobile products.",
   icons: {
